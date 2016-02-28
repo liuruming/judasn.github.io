@@ -29,11 +29,11 @@ Quick">
   
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
   
   <script>
       var yiliaConfig = {
@@ -44,9 +44,16 @@ Quick">
           isArchive: false,
           isTag: false,
           isCategory: false,
-          open_in_new: false
+          open_in_new: false,
       }
   </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
   
 </head>
 <body>
@@ -56,17 +63,14 @@ Quick">
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            
-            <img lazy-src="/img/avatar.png" class="js-avatar">
-            
+            <img src="/img/avatar.png" class="animated zoomIn">
         </a>
-
         <hgroup>
           <h1 class="header-author"><a href="/">Judas.n</a></h1>
         </hgroup>
 
         
-        <p class="header-subtitle">只为了记录</p>
+        <p class="header-subtitle">这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com</p>
         
                 
 
@@ -145,7 +149,7 @@ Quick">
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 10px;">IntelliJ IDEA</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a>
                     </div>
                 </section>
                 
@@ -185,15 +189,13 @@ Quick">
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
-                
+                <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Judas.n</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">只为了记录</p>
+            <p class="header-subtitle">这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com</p>
             
             <nav class="header-menu">
                 <ul>
@@ -387,7 +389,7 @@ Quick">
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/new/">new</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/Hexo/">使用Github空间搭建Hexo技术博客--安装篇（基于IntelliJ IDEA）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/new/">new</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/27/hello-world/">Hello World</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
