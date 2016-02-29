@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>YouMeek Code</title>
+  <subtitle>这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://code.youmeek.com/"/>
+  <updated>2016-02-29T12:44:09.944Z</updated>
+  <id>http://code.youmeek.com/</id>
+  
+  <author>
+    <name>Judas.n</name>
+    <email>363379444@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Github空间搭建Hexo技术博客--安装篇（基于IntelliJ IDEA）</title>
+    <link href="http://code.youmeek.com/2016/02/28/Hexo/"/>
+    <id>http://code.youmeek.com/2016/02/28/Hexo/</id>
+    <published>2016-02-28T09:58:27.000Z</published>
+    <updated>2016-02-29T12:44:09.944Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;部署前介绍&quot;&gt;&lt;a href=&quot;#部署前介绍&quot; class=&quot;headerlink&quot; title=&quot;部署前介绍&quot;&gt;&lt;/a&gt;部署前介绍&lt;/h2&gt;&lt;h3 id=&quot;Hexo-是什么&quot;&gt;&lt;a href=&quot;#Hexo-是什么&quot; class=&quot;headerlink&quot; title=&quot;Hexo 是什么&quot;&gt;&lt;/a&gt;Hexo 是什么&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Hexo 的中文官网：&lt;a href=&quot;http://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://hexo.io/zh-cn/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;作者 Tommy Chen：&lt;a href=&quot;https://zespia.tw/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zespia.tw/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在我的理解里面：Hexo 是一个基于 Node.js 快速、简洁且高效的博客框架，可以将 Markdown 文件快速的生成静态网页，托管在 GitHub Pages 上。&lt;/li&gt;
+&lt;li&gt;而官网自己是这样说的：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;为什么要用-Hexo&quot;&gt;&lt;a href=&quot;#为什么要用-Hexo&quot; class=&quot;headerlink&quot; title=&quot;为什么要用 Hexo&quot;&gt;&lt;/a&gt;为什么要用 Hexo&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;我：因为其他博客框架太烂了&lt;/li&gt;
+&lt;li&gt;Tommy Chen：&lt;a href=&quot;https://zespia.tw/blog/2012/10/11/hexo-debut/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zespia.tw/blog/2012/10/11/hexo-debut/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;适合人群&quot;&gt;&lt;a href=&quot;#适合人群&quot; class=&quot;headerlink&quot; title=&quot;适合人群&quot;&gt;&lt;/a&gt;适合人群&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;有 IntelliJ IDEA 基础的程序员（或者你使用的是 JetBrains 家的其他产品）&lt;/li&gt;
+&lt;li&gt;只想搭建一个技术博客的人（真心别搞太多，你没那么多精力）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;文章要求&quot;&gt;&lt;a href=&quot;#文章要求&quot; class=&quot;headerlink&quot; title=&quot;文章要求&quot;&gt;&lt;/a&gt;文章要求&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果是 Git，Node.js 的新人，则这篇文章不要间断操作，要一气呵成，不然可能会遇到各种问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;本文环境&quot;&gt;&lt;a href=&quot;#本文环境&quot; class=&quot;headerlink&quot; title=&quot;本文环境&quot;&gt;&lt;/a&gt;本文环境&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;系统：&lt;ul&gt;
+&lt;li&gt;Windows 10（64 位）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;软件：&lt;ul&gt;
+&lt;li&gt;git：&lt;strong&gt;2.7.0.2-64-bit&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA：&lt;strong&gt;15.0.4&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;node.js：&lt;strong&gt;v5.7.0-64-bit Stable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;账号：&lt;ul&gt;
+&lt;li&gt;Github：&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DNSPOD：&lt;a href=&quot;https://www.dnspod.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.dnspod.cn/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;搭建所需软件&quot;&gt;&lt;a href=&quot;#搭建所需软件&quot; class=&quot;headerlink&quot; title=&quot;搭建所需软件&quot;&gt;&lt;/a&gt;搭建所需软件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;各个软件官网：&lt;ul&gt;
+&lt;li&gt;git：&lt;a href=&quot;http://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git-scm.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA：&lt;a href=&quot;https://www.jetbrains.com/idea/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.jetbrains.com/idea/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;node.js：&lt;a href=&quot;http://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://nodejs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;所需软件集合：&lt;ul&gt;
+&lt;li&gt;上面三者集合包：&lt;a href=&quot;http://pan.baidu.com/s/1bvbo8e&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1bvbo8e&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;文章前提&quot;&gt;&lt;a href=&quot;#文章前提&quot; class=&quot;headerlink&quot; title=&quot;文章前提&quot;&gt;&lt;/a&gt;文章前提&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/05289a4bc8b2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/858ecf233db9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/858ecf233db9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/701b1095da11&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/701b1095da11&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/05289a4bc8b2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e858a90d0a17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/e858a90d0a17&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/db7e64d86067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/db7e64d86067&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mritd.me/2015/12/31/Github-%E6%90%AD%E5%BB%BA-Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mritd.me/2015/12/31/Github-%E6%90%AD%E5%BB%BA-Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e7413116e9d4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/e7413116e9d4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;域名绑定&quot;&gt;&lt;a href=&quot;#域名绑定&quot; class=&quot;headerlink&quot; title=&quot;域名绑定&quot;&gt;&lt;/a&gt;域名绑定&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你一开始就打算要绑定域名，则下面教程中所有可以填写域名的地方你都填写上你要绑定的域名，如果你没独立域名，那就使用 Github 默认给你的：XXXXXX.github.io 域名即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;部署开始&quot;&gt;&lt;a href=&quot;#部署开始&quot; class=&quot;headerlink&quot; title=&quot;部署开始&quot;&gt;&lt;/a&gt;部署开始&lt;/h2&gt;&lt;h3 id=&quot;git-安装&quot;&gt;&lt;a href=&quot;#git-安装&quot; class=&quot;headerlink&quot; title=&quot;git 安装&quot;&gt;&lt;/a&gt;git 安装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;双击运行 &lt;strong&gt;Git-2.7.0.2-64-bit.exe&lt;/strong&gt;，接下来一律下一步，不需要多余的选择，假设你安装的目录位置跟我一样：C:\Program Files\Git&lt;/li&gt;
+&lt;li&gt;打开 Git Bash（路径：C:\Program Files\Git\git-bash.exe），输入：&lt;code&gt;git --version&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;如下图，如果出现：&lt;strong&gt;git version 2.7.0.windows.2&lt;/strong&gt;，这表示安装成功&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-a-1.jpg&quot; alt=&quot;验证 git 安装&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Node-js-安装&quot;&gt;&lt;a href=&quot;#Node-js-安装&quot; class=&quot;headerlink&quot; title=&quot;Node.js 安装&quot;&gt;&lt;/a&gt;Node.js 安装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;双击运行 &lt;strong&gt;node-v5.7.0-x64.msi&lt;/strong&gt;，接下来一律下一步，不需要多余的选择。&lt;/li&gt;
+&lt;li&gt;安装完之后，打开 Git Bash，输入：&lt;code&gt;npm -v&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;如下图，如果出现：&lt;strong&gt;3.6.0&lt;/strong&gt;，则表示 Node.js 安装成功&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-a-2.jpg&quot; alt=&quot;验证 node.js 安装&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Node-js-源设置&quot;&gt;&lt;a href=&quot;#Node-js-源设置&quot; class=&quot;headerlink&quot; title=&quot;Node.js 源设置&quot;&gt;&lt;/a&gt;Node.js 源设置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在安装 Hexo 之前，先说一下 Node.js 的源，Node.js 官方源默认是：&lt;a href=&quot;http://registry.npmjs.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://registry.npmjs.org&lt;/a&gt;，但是由于在国外，说不定你使用的时候就抽风无法下载任何软件。所以我们决定暂时使用淘宝提供的源，淘宝源官网：&lt;a href=&quot;http://npm.taobao.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://npm.taobao.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在 Git Bash 中我们执行下面这一句（这是一整句的）：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;alias&lt;/span&gt; cnpm=&lt;span class=&quot;string&quot;&gt;&quot;npm --registry=https://registry.npm.taobao.org \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--cache=&lt;span class=&quot;variable&quot;&gt;$HOME&lt;/span&gt;/.npm/.cache/cnpm \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--disturl=https://npm.taobao.org/dist \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--userconfig=&lt;span class=&quot;variable&quot;&gt;$HOME&lt;/span&gt;/.cnpmrc&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;现在验证下是否可以使用淘宝的 cnpm 命令：&lt;code&gt;cnpm info express&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;如果能输出一大堆介绍，则说明成功了，以后每次要使用淘宝的源都需要这样来。现在除了默认的 &lt;strong&gt;npm&lt;/strong&gt;，还多了一个 &lt;strong&gt;cnpm&lt;/strong&gt; 可以使用，我们下面有关安装的讲解内容也都是基于此临时命令。&lt;/li&gt;
+&lt;li&gt;如果输出：bash: cnpm: command not found，则表示没成功，需要你在排查下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;安装-Hexo-框架&quot;&gt;&lt;a href=&quot;#安装-Hexo-框架&quot; class=&quot;headerlink&quot; title=&quot;安装 Hexo 框架&quot;&gt;&lt;/a&gt;安装 Hexo 框架&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;安装 Hexo（注意，现在是 cnpm 开头了，不是 npm 了）：&lt;code&gt;cnpm install -g hexo-cli&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;安装时间不一定很快，有可能需要等 3 ~ 5 分钟。&lt;/li&gt;
+&lt;li&gt;安装完有 WARN 警告也没关系的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;创建-Hexo-项目&quot;&gt;&lt;a href=&quot;#创建-Hexo-项目&quot; class=&quot;headerlink&quot; title=&quot;创建 Hexo 项目&quot;&gt;&lt;/a&gt;创建 Hexo 项目&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;现在假设我要创建一个名为 hexo 的项目，项目目录就放在：E:\git_work_space 目录下，所以我们在 E:\git_work_space 目录下创建一个 hexo 目录。现在这个项目的全路径是：E:\git_work_space\hexo&lt;/li&gt;
+&lt;li&gt;打开 Git Bash：&lt;ul&gt;
+&lt;li&gt;进入该目录：&lt;code&gt;cd e:/git_work_space/hexo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;然后执行：&lt;code&gt;hexo init&lt;/code&gt;，这个时间也会比较长，也有可能要等几分钟，有显示 WARN 也不用管&lt;/li&gt;
+&lt;li&gt;最后执行：&lt;code&gt;cnpm install&lt;/code&gt;，有显示 WARN 也不用管&lt;/li&gt;
+&lt;li&gt;安装完成之后，E:\git_work_space\hexo 目录结构是这样的：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-b-1.jpg&quot; alt=&quot;安装 hexo 后的目录结构&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;现在我们启动 hexo 本地服务，看下默认的博客是怎样的，命令：&lt;code&gt;hexo server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;现在用浏览器访问：&lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;，效果如下图&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-b-2.jpg&quot; alt=&quot;默认模板效果&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果要停止 hexo 服务：在 Git Bash 下按 &lt;code&gt;Ctrl + C&lt;/code&gt; 即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;选用其他主题&quot;&gt;&lt;a href=&quot;#选用其他主题&quot; class=&quot;headerlink&quot; title=&quot;选用其他主题&quot;&gt;&lt;/a&gt;选用其他主题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;由于默认主题太大众了，所以现在我们换个主题。&lt;/li&gt;
+&lt;li&gt;你可以去这里找主题：&lt;ul&gt;
+&lt;li&gt;hexo-theme：&lt;a href=&quot;https://hexo.io/themes/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hexo-github-theme-list：&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Themes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/hexojs/hexo/wiki/Themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;有那些好看的hexo主题？：&lt;a href=&quot;http://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/24422335&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;我这里选择的 &lt;strong&gt;yelee&lt;/strong&gt;：&lt;a href=&quot;https://github.com/MOxFIVE/hexo-theme-yelee&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/MOxFIVE/hexo-theme-yelee&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;原因是能最大化衬托出：目录、文章内容、代码块。因为我对这个博客的定位就是用来放技术类内容，所以不会让它太杂或是太花。只是目前这个颜色偏浅，后续还需要调整。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;现在假设你跟我要用的模板是一样：&lt;ul&gt;
+&lt;li&gt;还是让 Git Bash 保持在 E:\git_work_space\hexo 目录下，然后输入命令：&lt;code&gt;git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这样就在 E:\git_work_space\hexo\themes 目录下生成了一个 yelle 文件夹，里面有我们刚刚 clone 下来的主题内容。&lt;/li&gt;
+&lt;li&gt;如果以后你不自己修改这个主题的话，可以考虑经常更新下作者的更新内容：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cd e:/git_work_space/hexo/themes/yelee&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;下载好主题文件之后，我们现在要修改 E:\git_work_space\hexo 目录下的项目配置文件：&lt;strong&gt;_config.yml&lt;/strong&gt;，把对应的主题目录名改下，编辑如下图。&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-b-3.jpg&quot; alt=&quot;修改主题目录&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更改主题目录名后，我们还要重新生成主题静态内容：&lt;ul&gt;
+&lt;li&gt;继续在 Git Bash 中输入命令：&lt;ul&gt;
+&lt;li&gt;重新生成静态博客的所有内容：&lt;code&gt;hexo generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启 hexo 本地服务：&lt;code&gt;hexo server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重新访问：&lt;a href=&quot;http://localhost:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4000/&lt;/a&gt;，效果如下图&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-b-4.jpg&quot; alt=&quot;新主题效果&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;创建-Github-pages-并-SSH-授权&quot;&gt;&lt;a href=&quot;#创建-Github-pages-并-SSH-授权&quot; class=&quot;headerlink&quot; title=&quot;创建 Github pages 并 SSH 授权&quot;&gt;&lt;/a&gt;创建 Github pages 并 SSH 授权&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;现在假设你已经有一个 Gtihub 账号，你还需要一个特别的仓库，特别在仓库名就是你的 Github 账号登录名，比如我的用户名是：judasn，那我要创建的仓库名字完整滴填写是：judasn.github.io，具体效果如下图。&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-c-1.jpg&quot; alt=&quot;创建 github pages&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;创建好仓库之后，要本地生成 SSH 秘钥，方便电脑上的 git 软件好提交内容到 Github 上&lt;ul&gt;
+&lt;li&gt;在 Git Bash 中，输入：&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot;&lt;/code&gt;，然后回车，回车，再回车，一共 3 次回车，具体含义自己 Google。&lt;/li&gt;
+&lt;li&gt;比如我的：&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;jn3.141592654@gmail.com&amp;quot;&lt;/code&gt;，生成后效果如下图：&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-c-2.jpg&quot; alt=&quot;生成 ssh 密钥&quot;&gt;&lt;/li&gt;
+&lt;li&gt;此时，生成密钥后，在你电脑目录：C:\Users\你的计算机用户名.ssh 下，会生成两个文件：&lt;ul&gt;
+&lt;li&gt;私钥：&lt;strong&gt;id_rsa&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;公钥：&lt;strong&gt;id_rsa.pub&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;如果生成的不是这样的文件，那删除掉这两个生成的，重新执行上面的命令，让它再一次生成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;现在用记事本打开 id_rsa.pub，复制文件中的所有内容。&lt;ul&gt;
+&lt;li&gt;访问：&lt;a href=&quot;https://github.com/settings/ssh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/settings/ssh&lt;/a&gt;，添加新秘钥，效果如下图&lt;ul&gt;
+&lt;li&gt;Title：自己随便取&lt;/li&gt;
+&lt;li&gt;Key：把刚刚复制的都粘贴进来&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-c-3.jpg&quot; alt=&quot;添加密钥&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;把本地的博客内容同步到-Github-上&quot;&gt;&lt;a href=&quot;#把本地的博客内容同步到-Github-上&quot; class=&quot;headerlink&quot; title=&quot;把本地的博客内容同步到 Github 上&quot;&gt;&lt;/a&gt;把本地的博客内容同步到 Github 上&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;要把本地的静态博客同步到 Github，我们还需要先安装两个跟部署相关的 hexo 插件：&lt;ul&gt;
+&lt;li&gt;继续在 Git Bash 中输入：&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cnpm install hexo -server --save&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cnpm install hexo-deployer-git --save&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;编辑全局 hexo 的配置文件：&lt;strong&gt;_config.yml&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;官网对此配置的介绍：&lt;a href=&quot;https://hexo.io/zh-cn/docs/configuration.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/zh-cn/docs/configuration.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;我自己的编辑内容初稿（你需要认真看的是含有中文注释的内容）：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;76&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Hexo Configuration&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Docs: https://hexo.io/docs/configuration.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Source: https://github.com/hexojs/hexo/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Site，这一块区域主要是设置博客的主要说明，需要注意的是：每个冒号后面都是有一个空格，然后再书写自己的内容的&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;title: YouMeek Code&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;subtitle: 这里只有代码相关，要了解更多 &amp;gt;&amp;gt;&amp;gt; YouMeek.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;description: 这里是 YouMeek.com 一部分&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;author: Judas.n&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;email: &lt;span class=&quot;number&quot;&gt;363379444&lt;/span&gt;@qq.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;language: zh-CN&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;timezone:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# URL，这一块一般可以设置的是 url 这个参数，比如我要设置绑定域名的，这里就需要填写我的域名信息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;url: http://code.youmeek.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;root: /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;permalink: :year/:month/:day/:title/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;permalink_defaults:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Directory&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_dir: &lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public_dir: public&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tag_dir: tags&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;archive_dir: archives&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;category_dir: categories&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;code_dir: downloads/code&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;i18n_dir: :lang&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;skip_render:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Writing&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;new_post_name: :title.md &lt;span class=&quot;comment&quot;&gt;# File name of new posts&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;default_layout: post&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;titlecase: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;# Transform title into titlecase&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;external_link: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;# Open external links in new tab&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename_&lt;span class=&quot;keyword&quot;&gt;case&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;render_drafts: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;post_asset_folder: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;relative_link: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;future: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;highlight:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;enable&lt;/span&gt;: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  line_number: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  auto_detect: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  tab_replace:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Category &amp;amp; Tag&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;default_category: uncategorized&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;category_map:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tag_map:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Date / Time format&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Hexo uses Moment.js to parse and display date&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## You can customize the date format as defined in&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## http://momentjs.com/docs/#/displaying/format/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date_format: YYYY-MM-DD&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;time_format: HH:mm:ss&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Pagination&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Set per_page to 0 to disable pagination&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;per_page: &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pagination_dir: page&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Extensions&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Plugins: https://hexo.io/plugins/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Themes: https://hexo.io/themes/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;theme: yelee&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Deployment&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 这里是重点，这里是修改发布地址，因为我们前面已经加了 SSH 密钥信息在 Github 设置里面了，所以只要我们电脑里面持有那两个密钥文件就可以无需密码地跟 Github 做同步。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 需要注意的是这里的 repo 采用的是 ssh 的地址，而不是 https 的。分支我们默认采用 master 分支，以后你翅膀硬了要换其他也无所谓。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## Docs: https://hexo.io/docs/deployment.html&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repo: git@github.com:judasn/judasn.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;编辑全局配置后我们需要重新部署：&lt;ul&gt;
+&lt;li&gt;继续在 Git Bash 中输入命令：&lt;/li&gt;
+&lt;li&gt;先清除掉已经生成的旧文件：&lt;code&gt;hexo clean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;再生成一次静态文件：&lt;code&gt;hexo generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在本地预览下：&lt;code&gt;hexo server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;本地没问题之后，Ctrl + C 停掉本地预览，使用部署命令部署到 Github 上：&lt;code&gt;hexo deploy&lt;/code&gt;，有弹出下面提示框，请输入：&lt;code&gt;yes&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-d-1.jpg&quot; alt=&quot;确认提交&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;提交成功效果如下：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-d-2.jpg&quot; alt=&quot;提交成功&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;访问服务器地址进行检查：&lt;a href=&quot;http://judasn.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://judasn.github.io&lt;/a&gt;，效果如下&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-d-3.jpg&quot; alt=&quot;服务器效果&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;通过上面几次流程我们也就可以总结：以后，每次发表新文章要部署都按这样的流程来：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo clean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo deploy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;也因为这几个命令太频繁了，所以又有了精简版的命令：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hexo clean == hexo clean&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo g == hexo generate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo s == hexo server&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo d == hexo deploy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;绑定域名&quot;&gt;&lt;a href=&quot;#绑定域名&quot; class=&quot;headerlink&quot; title=&quot;绑定域名&quot;&gt;&lt;/a&gt;绑定域名&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;绑定域名不排除会遇到很多网络问题或是七七八八，所以这里先提供先官网的一些说明：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/setting-up-your-pages-site-repository/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/setting-up-your-pages-site-repository/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/quick-start-setting-up-a-custom-domain/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/quick-start-setting-up-a-custom-domain/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/setting-up-an-apex-domain/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/setting-up-an-apex-domain/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/troubleshooting-custom-domains/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/troubleshooting-custom-domains/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;首先我们要一个 CNAME 文件（文件名叫 CNAME，没有文件后缀的），把该文件放在 E:\git_work_space\hexo\source 目录下，以后一些需要放在根目录的资源文件都可以放这里。如果你找不到这样的文件可以到我的项目上下载：&lt;a href=&quot;https://github.com/judasn/judasn.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/judasn/judasn.github.io&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;CNAME 上的内容需要写你具体要绑定的域名信息，比如我是：&lt;strong&gt;code.youmeek.com&lt;/strong&gt;，具体你可以参考下图：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-e-1.jpg&quot; alt=&quot;设置 CNAME 文件&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;接着我们需要到 DNSPOD 上设置域名解析：&lt;a href=&quot;https://www.dnspod.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.dnspod.cn/&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-e-2.jpg&quot; alt=&quot;设置域名解析&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-e-3.jpg&quot; alt=&quot;设置域名解析&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;设置好之后，等过几分钟域名解析好之后，我们访问：&lt;a href=&quot;http://code.youmeek.com&quot;&gt;http://code.youmeek.com&lt;/a&gt;，效果如下：    &lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-e-4.jpg&quot; alt=&quot;域名访问效果&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;整合-IntelliJ-IDEA-提高效率&quot;&gt;&lt;a href=&quot;#整合-IntelliJ-IDEA-提高效率&quot; class=&quot;headerlink&quot; title=&quot;整合 IntelliJ IDEA 提高效率&quot;&gt;&lt;/a&gt;整合 IntelliJ IDEA 提高效率&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;为了提交写作效率，我个人建议使用 IntelliJ IDEA 作为 Markdown 编辑工具&lt;ul&gt;
+&lt;li&gt;IntelliJ IDEA 有各种各样的快捷键支持你的操作&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA 可以快速地全文检索项目所有的文件&lt;/li&gt;
+&lt;li&gt;对 JavaScript、CSS、HTML 等常见语言的良好支持，方便你修改你的主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果你还不会使用 IntelliJ IDEA 或是 JetBrains 家其他产品，你可以看下我写一整套教程：&lt;a href=&quot;http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;现在我们用 IntelliJ IDEA 打开我们本地目录：E:\git_work_space\hexo，打开后效果如下图：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-f-1.jpg&quot; alt=&quot;IntelliJ IDEA 打开项目&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;由于 IntelliJ IDEA 在 Windows 下的默认终端是 &lt;code&gt;cmd&lt;/code&gt; 不好用，我们现在需要重新修改下 IntelliJ IDEA 的终端工具，把它指向我们习惯的 Git Bash，这样方便操作，如下图 gif 演示。&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-f-2.gif&quot; alt=&quot;IntelliJ IDEA 下操作 hexo&quot;&gt;&lt;/li&gt;
+&lt;li&gt;如 gif 演示，我们可以 IntelliJ IDEA 里面安心写文章、做发布等操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为了更稳定地使用 IntelliJ IDEA，在不修改主题的情况下，我们还需要这样做：&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/hexo-start-f-3.jpg&quot; alt=&quot;IntelliJ IDEA 下操作 hexo&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;hexo 新文章内容的开头需要这样定义：&lt;ul&gt;
+&lt;li&gt;categories：表示文章所属分类&lt;/li&gt;
+&lt;li&gt;tags：表示文章所属标签&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;title: 这是文章标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: &lt;span class=&quot;number&quot;&gt;2016&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;02&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;28&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;17&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;58&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;27&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;categories: [Hexo,IntelliJ IDEA]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: [Hexo,IntelliJ IDEA,Git,Github,Node.js]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;结束语&quot;&gt;&lt;a href=&quot;#结束语&quot; class=&quot;headerlink&quot; title=&quot;结束语&quot;&gt;&lt;/a&gt;结束语&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;我希望从这一篇你也可以再一次了解到 IntelliJ IDEA 的美丽之处。&lt;/li&gt;
+&lt;li&gt;最后，欢迎再次来到 IntelliJ IDEA 的世界！&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+    <summary type="html">
+    
+      本文将讲解基于 IntelliJ IDEA 如何使用 IDE 搭建 Hexo 博客、写博客！
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://code.youmeek.com/categories/Hexo/"/>
+    
+      <category term="IntelliJ IDEA" scheme="http://code.youmeek.com/categories/Hexo/IntelliJ-IDEA/"/>
+    
+    
+      <category term="Git" scheme="http://code.youmeek.com/tags/Git/"/>
+    
+      <category term="Github" scheme="http://code.youmeek.com/tags/Github/"/>
+    
+      <category term="Hexo" scheme="http://code.youmeek.com/tags/Hexo/"/>
+    
+      <category term="IntelliJ IDEA" scheme="http://code.youmeek.com/tags/IntelliJ-IDEA/"/>
+    
+      <category term="Node.js" scheme="http://code.youmeek.com/tags/Node-js/"/>
+    
+  </entry>
+  
+</feed>
