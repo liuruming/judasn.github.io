@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-02-29T16:20:36.381Z</updated>
+  <updated>2016-02-29T16:23:26.137Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo博客--增强篇</title>
+    <title>搭建Hexo博客--增强篇</title>
     <link href="http://code.youmeek.com/2016/02/29/Hexo-Intensify/"/>
     <id>http://code.youmeek.com/2016/02/29/Hexo-Intensify/</id>
     <published>2016-02-29T15:43:30.000Z</published>
-    <updated>2016-02-29T16:20:36.381Z</updated>
+    <updated>2016-02-29T16:23:26.137Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;主题优化&quot;&gt;&lt;a href=&quot;#主题优化&quot; class=&quot;headerlink&quot; title=&quot;主题优化&quot;&gt;&lt;/a&gt;主题优化&lt;/h2&gt;&lt;h3 id=&quot;主题配置介绍&quot;&gt;&lt;a href=&quot;#主题配置介绍&quot; class=&quot;headerlink&quot; title=&quot;主题配置介绍&quot;&gt;&lt;/a&gt;主题配置介绍&lt;/h3&gt;&lt;p&gt;我这里只讲自己在使用的 yelle 主题，你可以参考下，可能还有一些改动我后续会自己在慢慢改，但是大体基本也就这样了。&lt;/p&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;新增一个 robot.txt 文件，把该文件放在：E:\git_work_space\hexo\source 目录下，如果你没有该文件可以到我的项目上找：&lt;a href=&quot;https://github.com/judasn/judasn.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/judasn/judasn.github.io&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;robot 文件内容：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;User-Agent: *
+&lt;pre&gt;&lt;code&gt;User-Agent: *
 Allow: /
 Disallow: /background
 Disallow: /css
@@ -51,8 +51,7 @@ Disallow: /img
 Disallow: /js
 Sitemap: http://code.youmeek.com/sitemap.xml
 Sitemap: http://code.youmeek.com/baidusitemap.xml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;插件推荐&quot;&gt;&lt;a href=&quot;#插件推荐&quot; class=&quot;headerlink&quot; title=&quot;插件推荐&quot;&gt;&lt;/a&gt;插件推荐&lt;/h2&gt;&lt;h3 id=&quot;插件的基本使用命令&quot;&gt;&lt;a href=&quot;#插件的基本使用命令&quot; class=&quot;headerlink&quot; title=&quot;插件的基本使用命令&quot;&gt;&lt;/a&gt;插件的基本使用命令&lt;/h3&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;插件推荐&quot;&gt;&lt;a href=&quot;#插件推荐&quot; class=&quot;headerlink&quot; title=&quot;插件推荐&quot;&gt;&lt;/a&gt;插件推荐&lt;/h2&gt;&lt;h3 id=&quot;插件的基本使用命令&quot;&gt;&lt;a href=&quot;#插件的基本使用命令&quot; class=&quot;headerlink&quot; title=&quot;插件的基本使用命令&quot;&gt;&lt;/a&gt;插件的基本使用命令&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;安装插件：&lt;code&gt;npm install 插件名 --save&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;卸载插件：&lt;code&gt;npm uninstall 插件名&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;更新插件和博客框架（需要在 E:\git_work_space\hexo 目录下）：&lt;code&gt;npm update&lt;/code&gt;&lt;ul&gt;
