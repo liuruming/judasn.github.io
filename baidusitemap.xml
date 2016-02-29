@@ -4,15 +4,20 @@
 
     
   <url>
-    <loc>http://code.youmeek.com/2016/03/01/Hexo-Intensify/</loc>
-    <lastmod>2016-02-29T16:19:09.446Z</lastmod>
+    <loc>http://code.youmeek.com/2016/02/29/Hexo-Intensify/</loc>
+    <lastmod>2016-02-29T16:20:36.381Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2016-02-29T16:19:09.448Z</pubTime>
+        <title>Hexo博客--增强篇</title>
+        <pubTime>2016-02-29T15:43:30.000Z</pubTime>
         
+        <tag>Hexo</tag>
+         
          
            
+             
+              <breadCrumb title="Hexo" url="http://code.youmeek.com/categories/Hexo/"/>
+          
         </display>
     </data>
     </url>
