@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>我的学习、归纳方法（以学习 Maven 为例） | YouMeek Code</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="description" content="以我的个人角度来看待学习这件长久的事，希望对你有帮助，也希望你能提一下你的意见">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的学习、归纳方法（以学习 Maven 为例）">
+<meta property="og:url" content="http://code.youmeek.com/2016/03/07/My-Learning-Way/index.html">
+<meta property="og:site_name" content="YouMeek Code">
+<meta property="og:description" content="以我的个人角度来看待学习这件长久的事，希望对你有帮助，也希望你能提一下你的意见">
+<meta property="og:updated_time" content="2016-03-07T15:40:35.366Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的学习、归纳方法（以学习 Maven 为例）">
+<meta name="twitter:description" content="以我的个人角度来看待学习这件长久的事，希望对你有帮助，也希望你能提一下你的意见">
+  
+    <link rel="alternative" href="/atom.xml" title="YouMeek Code" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" type="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: true,
+      }
+  </script>
+
+  
+      <script>
+          yiliaConfig.rootUrl = "/";
+      </script>
+  
+
+  
+      <script>
+          var _hmt = _hmt || [];
+          (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?b68dade9d355a0b3d875d0ffbbe1f212";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+          })();
+      </script>
+  
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Judas.n</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com</p>
+        
+                
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/IntelliJ IDEA">IntelliJ IDEA</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:judas.n@qq.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/judasn/IntelliJ-IDEA-Tutorial" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Git/" style="font-size: 10px">Git</a> <a href="/tags/Github/" style="font-size: 10px">Github</a> <a href="/tags/Hexo/" style="font-size: 20px">Hexo</a> <a href="/tags/IntelliJ-IDEA/" style="font-size: 10px">IntelliJ IDEA</a> <a href="/tags/Java/" style="font-size: 10px">Java</a> <a href="/tags/Maven/" style="font-size: 10px">Maven</a> <a href="/tags/Node-js/" style="font-size: 10px">Node.js</a> <a href="/tags/学习方法/" style="font-size: 10px">学习方法</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.YouMeek.com">YouMeek</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://i.YouMeek.com">YouMeek导航</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/">GitHub</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">此地只专注于技术</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Judas.n</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Judas.n</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">这里只有代码相关，要了解更多 &gt;&gt;&gt; YouMeek.com</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/IntelliJ IDEA">IntelliJ IDEA</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <li id="Email"><a class="Email" target="_blank" href="mailto:judas.n@qq.com" title="Email"></a></li>
+                            
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/judasn/IntelliJ-IDEA-Tutorial" title="GitHub"></a></li>
+                            
+                                <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-My-Learning-Way" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/07/My-Learning-Way/" class="article-date">
+      <time datetime="2016-03-07T12:50:25.000Z" itemprop="datePublished">2016-03-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        <h1 class="article-title" itemprop="name">
+      我的学习、归纳方法（以学习 Maven 为例）
+    </h1>
+      </header>
+      
+      <div class="article-info article-info-post">
+        <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/学习方法/">学习方法</a><a class="article-category-link" href="/categories/学习方法/Java/">Java</a>
+    </div>
+        <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Maven/">Maven</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习方法/">学习方法</a></li></ul>
+    </div>
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <a id="more"></a>
+<h2 id="本文-Markdown-源文件地址"><a href="#本文-Markdown-源文件地址" class="headerlink" title="本文 Markdown 源文件地址"></a>本文 Markdown 源文件地址</h2><ul>
+<li>转载请注明出处：<a href="https://github.com/judasn/hexo-blog/blob/master/2016/02/My-Learning-Way.md" target="_blank" rel="external">https://github.com/judasn/hexo-blog/blob/master/2016/02/My-Learning-Way.md</a></li>
+</ul>
+<h2 id="当我们要学习新技术-东西"><a href="#当我们要学习新技术-东西" class="headerlink" title="当我们要学习新技术/东西"></a>当我们要学习新技术/东西</h2><ul>
+<li>在过去未被自己流程化的情况下，自己学习新的东西的时候一直是处理迷迷糊糊的状态，直到我看到这张思维导图，我瞬间就理清自己平时在学习东西时候那混乱的思维了。</li>
+<li>可能平时我们也是这样做的，可是我们从来没有认真思考过或是整理过这样的思绪。也许你认为这样不重要，但是对我而言，有记录的东西，代表可以被流程化，这可以帮助特定情况下的我。</li>
+<li>下面跟着这张思维导图，我们一起来整理 Maven 的材料。</li>
+</ul>
+<h3 id="它是什么"><a href="#它是什么" class="headerlink" title="它是什么"></a>它是什么</h3><ul>
+<li>术语定义<ul>
+<li>Maven 官网定义：<a href="http://maven.apache.org/" target="_blank" rel="external">http://maven.apache.org/</a></li>
+<li>百度百科定义：<a href="http://baike.baidu.com/view/336103.htm" target="_blank" rel="external">http://baike.baidu.com/view/336103.htm</a></li>
+<li>维基百科定义：<a href="https://zh.wikipedia.org/wiki/Apache_Maven" target="_blank" rel="external">https://zh.wikipedia.org/wiki/Apache_Maven</a><ul>
+<li>在 Wiki 上还需要注意如下，这些有助于你站在更加宏观的角度看待它，但是可能需要积累：<ul>
+<li><code>参见</code></li>
+<li><code>补充阅读</code></li>
+<li><code>参考资料</code></li>
+<li><code>外部链接</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>它的历史<ul>
+<li>Google 搜索：<code>Maven History</code></li>
+<li>Google 搜索：<code>Maven 区别</code>、<code>Maven difference</code><ul>
+<li>在 Google 搜索结果页最下面，看它提示的搜索关键字内容，看是否有版本上的区别。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>同类常见技术（按技术出现时间正序）<ul>
+<li><code>Ant</code></li>
+<li><code>Gradle</code></li>
+</ul>
+</li>
+<li>同类技术比较：<ul>
+<li>Google 搜索：<code>Ant Maven Gradle</code></li>
+<li>比如文章：<a href="http://blog.csdn.net/napolunyishi/article/details/39345995" target="_blank" rel="external">http://blog.csdn.net/napolunyishi/article/details/39345995</a></li>
+</ul>
+</li>
+<li>学习前提/依赖<ul>
+<li>要有 Java 基础相关</li>
+</ul>
+</li>
+</ul>
+<h3 id="为什么会出现"><a href="#为什么会出现" class="headerlink" title="为什么会出现"></a>为什么会出现</h3><ul>
+<li>Google 搜索：<ul>
+<li>关键字：<code>为什么用 maven</code></li>
+<li>关键字：<code>why use maven</code></li>
+<li>关键字：<code>What does Maven do</code></li>
+<li>关键字：<code>Why do we need Maven</code></li>
+<li>关键字：<code>Why should we use Maven</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="哪些人不喜欢它"><a href="#哪些人不喜欢它" class="headerlink" title="哪些人不喜欢它"></a>哪些人不喜欢它</h3><ul>
+<li>Google 搜索：<ul>
+<li>关键字：<code>不用 maven</code></li>
+<li>关键字：<code>Why I Don&#39;t Use Maven</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="我要怎么做（按优先级从高到低排序）"><a href="#我要怎么做（按优先级从高到低排序）" class="headerlink" title="我要怎么做（按优先级从高到低排序）"></a>我要怎么做（按优先级从高到低排序）</h3><ul>
+<li>看教程<ul>
+<li>官网快速入门文档<ul>
+<li>在官网中查看带有下面几个关键字的链接：<ul>
+<li><code>Getting Started</code></li>
+<li><code>Quick Start</code></li>
+<li><code>Getting Started Guides</code></li>
+<li><code>Tutorials</code></li>
+<li><code>Guides</code></li>
+<li><code>Development Guides</code></li>
+<li><code>Documentation</code></li>
+<li><code>Docs</code></li>
+<li><code>Screencasts</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>在极客学院搜索对应的教学视频（我是年 VIP）</li>
+<li>Google 搜索：<code>Maven 视频 教程 百度云网盘</code>    </li>
+<li>Google 搜索：<code>Maven 视频 教程</code></li>
+<li>简书-搜索相关内容：<a href="http://www.jianshu.com/" target="_blank" rel="external">http://www.jianshu.com/</a></li>
+<li>知乎-搜索相关内容：<a href="http://www.zhihu.com/" target="_blank" rel="external">http://www.zhihu.com/</a></li>
+<li>Quora-搜索相关内容：<a href="https://www.quora.com/" target="_blank" rel="external">https://www.quora.com/</a></li>
+<li>微博-搜索相关内容：<a href="http://weibo.com" target="_blank" rel="external">http://weibo.com</a></li>
+<li>公众号-搜索相关内容：<a href="http://weixin.sogou.com/" target="_blank" rel="external">http://weixin.sogou.com/</a></li>
+<li>开发者头条-搜索相关内容：<a href="http://toutiao.io/" target="_blank" rel="external">http://toutiao.io/</a></li>
+<li>京东-图书：<a href="http://book.jd.com/" target="_blank" rel="external">http://book.jd.com/</a></li>
+</ul>
+</li>
+<li>写 Demo</li>
+<li>项目场景模拟和应用</li>
+</ul>
+<h3 id="归纳整理并分享"><a href="#归纳整理并分享" class="headerlink" title="归纳整理并分享"></a>归纳整理并分享</h3><ul>
+<li>整理<ul>
+<li>为知笔记里面内容</li>
+<li>浏览器书签</li>
+<li>简书中收藏</li>
+<li>开发者头条中收藏</li>
+<li>微博中收藏</li>
+<li>RSS 订阅<ul>
+<li>无法订阅的博客使用 Feed43 生成 RSS：<a href="http://feed43.com/" target="_blank" rel="external">http://feed43.com/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分享<ul>
+<li>写博客</li>
+<li>分享到开发者头条</li>
+<li>分享到简书</li>
+</ul>
+</li>
+</ul>
+<h2 id="过程细节"><a href="#过程细节" class="headerlink" title="过程细节"></a>过程细节</h2><ul>
+<li>Google 搜索必备：<ul>
+<li><code>Maven site:www.youmeek.com</code>，表示搜索结果局限于在：www.youmeek.com 这个站点</li>
+<li><code>Maven link:www.youmeek.com</code>，返回所有链接到 www.youmeek.com 的网页</li>
+<li><code>related:www.qq.com</code>，查找类似 www.youmeek.com 的网站</li>
+<li><code>cache:www.youmeek.com</code>，查找 www.youmeek.com 的历史快照</li>
+</ul>
+</li>
+</ul>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><ul>
+<li>我猜测你可能需要 VPN 或是 Shadowsocks</li>
+</ul>
+      
+    </div>
+    
+  </div>
+  
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/07/My-Learning-Way/">我的学习、归纳方法（以学习 Maven 为例）</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Judas.n 的个人博客">Judas.n</a></p>
+        <p><span>发布时间:</span>2016年03月07日 - 20时50分</p>
+        <p><span>最后更新:</span>2016年03月07日 - 23时40分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/07/My-Learning-Way/" title="我的学习、归纳方法（以学习 Maven 为例）">http://code.youmeek.com/2016/03/07/My-Learning-Way/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://code.youmeek.com/2016/03/07/My-Learning-Way/　　作者: Judas.n" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/02/29/Hexo-Intensify/">
+                    搭建Hexo博客--增强篇
+                </a>
+            </div>
+        
+    </nav>
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本文-Markdown-源文件地址"><span class="toc-number">1.</span> <span class="toc-text">本文 Markdown 源文件地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#当我们要学习新技术-东西"><span class="toc-number">2.</span> <span class="toc-text">当我们要学习新技术/东西</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#它是什么"><span class="toc-number">2.1.</span> <span class="toc-text">它是什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为什么会出现"><span class="toc-number">2.2.</span> <span class="toc-text">为什么会出现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#哪些人不喜欢它"><span class="toc-number">2.3.</span> <span class="toc-text">哪些人不喜欢它</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我要怎么做（按优先级从高到低排序）"><span class="toc-number">2.4.</span> <span class="toc-text">我要怎么做（按优先级从高到低排序）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#归纳整理并分享"><span class="toc-number">2.5.</span> <span class="toc-text">归纳整理并分享</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过程细节"><span class="toc-number">3.</span> <span class="toc-text">过程细节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结束语"><span class="toc-number">4.</span> <span class="toc-text">结束语</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+    <style>
+        .toc {
+            white-space: nowrap;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $(".toc li a").mouseover(function() {
+                var title = $(this).attr('href');
+                $(this).attr("title", title);
+            });
+        })
+    </script>
+
+
+    <div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+
+    
+        <section class="youyan" id="comments">
+  <div id="uyan_frame"></div>
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=1738968"></script>
+</section>
+    
+
+
+<div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/02/29/Hexo-Intensify/" title="下一篇: 搭建Hexo博客--增强篇">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/07/My-Learning-Way/">我的学习、归纳方法（以学习 Maven 为例）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/Hexo-Intensify/">搭建Hexo博客--增强篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/Hexo/">使用Github空间搭建Hexo技术博客--安装篇（基于IntelliJ IDEA）</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+    <script>
+        
+    </script></div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Judas.n
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit">本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+<style>
+        body {
+          background: lightgray;
+        }
+        #container .left-col {
+          background: white;
+        }
+        .article-inner {
+          background: white;
+          margin-bottom: 1em;
+        }
+        .post-nav-button {
+          background: #ececec;
+        }
+        #header .header-nav .social #GitHub {
+          background-color: #bfd3ec;
+        }
+        #post-nav-button a {
+          background: rgba(215, 216, 215, .2);
+        }
+        .post-list {
+          background: white;
+        }
+    </style>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>

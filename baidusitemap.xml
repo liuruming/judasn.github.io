@@ -4,8 +4,35 @@
 
     
   <url>
+    <loc>http://code.youmeek.com/2016/03/07/My-Learning-Way/</loc>
+    <lastmod>2016-03-07T15:40:35.366Z</lastmod>
+    <data>
+        <display>
+        <title>我的学习、归纳方法（以学习 Maven 为例）</title>
+        <pubTime>2016-03-07T12:50:25.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Maven</tag>
+         
+        <tag>学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习方法" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="Java" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://code.youmeek.com/2016/02/29/Hexo-Intensify/</loc>
-    <lastmod>2016-02-29T16:23:26.137Z</lastmod>
+    <lastmod>2016-02-29T16:30:43.477Z</lastmod>
     <data>
         <display>
         <title>搭建Hexo博客--增强篇</title>
