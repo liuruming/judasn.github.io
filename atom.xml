@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-08T00:39:53.269Z</updated>
+  <updated>2016-03-08T00:45:44.323Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://code.youmeek.com/2016/03/07/My-Learning-Way/"/>
     <id>http://code.youmeek.com/2016/03/07/My-Learning-Way/</id>
     <published>2016-03-07T12:50:25.000Z</published>
-    <updated>2016-03-08T00:39:53.269Z</updated>
+    <updated>2016-03-08T00:45:44.323Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文-Markdown-源文件地址&quot;&gt;&lt;a href=&quot;#本文-Markdown-源文件地址&quot; class=&quot;headerlink&quot; title=&quot;本文 Markdown 源文件地址&quot;&gt;&lt;/a&gt;本文 Markdown 源文件地址&lt;/h2&gt;&lt;ul&gt;
@@ -140,10 +140,11 @@
 &lt;li&gt;整理&lt;ul&gt;
 &lt;li&gt;为知笔记里面内容&lt;/li&gt;
 &lt;li&gt;浏览器书签&lt;/li&gt;
-&lt;li&gt;简书中收藏&lt;/li&gt;
-&lt;li&gt;开发者头条中收藏&lt;/li&gt;
-&lt;li&gt;微博中收藏&lt;/li&gt;
-&lt;li&gt;RSS 订阅&lt;ul&gt;
+&lt;li&gt;简书中收藏：&lt;a href=&quot;http://www.jianshu.com/bookmarks&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/bookmarks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;简书中喜欢：&lt;a href=&quot;http://www.jianshu.com/favourites&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/favourites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;开发者头条中收藏：&lt;a href=&quot;http://toutiao.io/favorites&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://toutiao.io/favorites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;微博中收藏：&lt;a href=&quot;http://weibo.com/fav&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com/fav&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS 订阅：&lt;a href=&quot;http://www.inoreader.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.inoreader.com/&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;无法订阅的博客使用 Feed43 生成 RSS：&lt;a href=&quot;http://feed43.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://feed43.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
