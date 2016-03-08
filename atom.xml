@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-07T15:40:35.366Z</updated>
+  <updated>2016-03-08T00:25:35.484Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://code.youmeek.com/2016/03/07/My-Learning-Way/"/>
     <id>http://code.youmeek.com/2016/03/07/My-Learning-Way/</id>
     <published>2016-03-07T12:50:25.000Z</published>
-    <updated>2016-03-07T15:40:35.366Z</updated>
+    <updated>2016-03-08T00:25:35.484Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文-Markdown-源文件地址&quot;&gt;&lt;a href=&quot;#本文-Markdown-源文件地址&quot; class=&quot;headerlink&quot; title=&quot;本文 Markdown 源文件地址&quot;&gt;&lt;/a&gt;本文 Markdown 源文件地址&lt;/h2&gt;&lt;ul&gt;
@@ -114,10 +114,22 @@
 &lt;li&gt;公众号-搜索相关内容：&lt;a href=&quot;http://weixin.sogou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weixin.sogou.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;开发者头条-搜索相关内容：&lt;a href=&quot;http://toutiao.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://toutiao.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;京东-图书：&lt;a href=&quot;http://book.jd.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://book.jd.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YouTube-搜索相关内容：&amp;lt;&amp;gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;写 Demo&lt;/li&gt;
+&lt;li&gt;自己写 Demo&lt;/li&gt;
+&lt;li&gt;参考别人 Demo&lt;ul&gt;
+&lt;li&gt;Gtihub 搜索 Demo：&lt;a href=&quot;https://github.com/search/advanced&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/search/advanced&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Git@OSC 搜索 Demo：&lt;a href=&quot;http://git.oschina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Git@OSC 搜索 Demo：&lt;a href=&quot;http://git.oschina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;项目场景模拟和应用&lt;/li&gt;
+&lt;li&gt;遇到问题&lt;ul&gt;
+&lt;li&gt;Google&lt;/li&gt;
+&lt;li&gt;Stack Overflow：&lt;a href=&quot;http://stackoverflow.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;归纳整理并分享&quot;&gt;&lt;a href=&quot;#归纳整理并分享&quot; class=&quot;headerlink&quot; title=&quot;归纳整理并分享&quot;&gt;&lt;/a&gt;归纳整理并分享&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;整理&lt;ul&gt;
@@ -136,6 +148,7 @@
 &lt;li&gt;写博客&lt;/li&gt;
 &lt;li&gt;分享到开发者头条&lt;/li&gt;
 &lt;li&gt;分享到简书&lt;/li&gt;
+&lt;li&gt;系统整理 Demo 在 Github 上&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
