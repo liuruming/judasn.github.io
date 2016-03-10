@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-09T14:41:39.518Z</updated>
+  <updated>2016-03-10T11:48:15.646Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -14,6 +14,356 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>构建工具-Maven-相关知识-整理专题</title>
+    <link href="http://code.youmeek.com/2016/03/09/Maven/"/>
+    <id>http://code.youmeek.com/2016/03/09/Maven/</id>
+    <published>2016-03-09T11:56:08.000Z</published>
+    <updated>2016-03-10T11:48:15.646Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;本文初衷&quot;&gt;&lt;a href=&quot;#本文初衷&quot; class=&quot;headerlink&quot; title=&quot;本文初衷&quot;&gt;&lt;/a&gt;本文初衷&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;http://img.youmeek.com/2016/maven.png&quot; alt=&quot;Maven&quot;&gt;&lt;/li&gt;
+&lt;li&gt;整理自己脑袋中、收藏中的那些资料，来一次清空，让自己重新开始。&lt;/li&gt;
+&lt;li&gt;整理这篇的起点是本人已经会使用 Maven，并且已经使用了一年多，所以我个人觉得这篇文章对完全不懂 Maven 来讲是有压力的，但是对于刚刚入门 Maven 的人是有帮助的。&lt;/li&gt;
+&lt;li&gt;如果你认为一篇文章就可以让你完全了解 Maven，那你是在鄙视官网帮助文档书写者。&lt;/li&gt;
+&lt;li&gt;以此篇为引，希望可以得到你的建议，我只想成长，真心感谢!（鞠躬）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;先总结&quot;&gt;&lt;a href=&quot;#先总结&quot; class=&quot;headerlink&quot; title=&quot;先总结&quot;&gt;&lt;/a&gt;先总结&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;如果你是学习 Java 或是说 JVM 语言相关的内容的话，在实际使用中有一个东西你是绕不过去的，构建工具。等你到企业还有一个东西你也绕不过去，持续集成。&lt;/li&gt;
+&lt;li&gt;在说持续集成前，先简单地解释两个概念：集群、分布式&lt;ul&gt;
+&lt;li&gt;应用集群：同样的一套程序/代码，放在一批服务器上，每台服务器上的代码一样。&lt;/li&gt;
+&lt;li&gt;应用分布式：不同的组件代码，放在一批服务器上，不同的服务器放不同模块的代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在大公司，现在的项目基本都是分布式的，而要做到分布式那就得尽可能地分层、分割、分布。也因为这样，一个项目一般都是由不同模块组合成的。公司里在不同的地区或是部门做不同的模块，尽量减少部门与部门、地区与地区模块的耦合度，也就是降低必要的联系，让他们尽可能的能独立开发、测试。&lt;ul&gt;
+&lt;li&gt;这样的拆分，对一个项目的好处是：&lt;ul&gt;
+&lt;li&gt;分布式架构：具有高性能、高可用、可伸缩、可扩展等优点&lt;/li&gt;
+&lt;li&gt;公司成本会降低，类似阿里的去 IOE&lt;/li&gt;
+&lt;li&gt;效率会提高&lt;/li&gt;
+&lt;li&gt;容错能力更强&lt;/li&gt;
+&lt;li&gt;灵活性更高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;举一个两者简单的对比例子&lt;ul&gt;
+&lt;li&gt;应用分布式&lt;ul&gt;
+&lt;li&gt;一个采用分布式架构的电商，在做抢购的特殊时候，压力特别的大的部分应该是：购物车、订单、库存、日志等这些跟购物有关的模块，那既然这几个模块压力大，那我们就在抢购前多部署几套跟购物业务相关的模块到服务器上，此时要求这类服务器性能只要能承载对应的模块即可。其他比如：资讯、客服等无压力模块就原样部署即可，无需变动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;应用集群&lt;ul&gt;
+&lt;li&gt;一个采用应用集群架构的电商，在做抢购的特殊时候，为了抗住压力，必须把整个应用一套一套地部署到新服务器上，此时就要求服务器性能要好，能承载整个应用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对比总结：降低成本&lt;/li&gt;
+&lt;li&gt;扩展内容&lt;ul&gt;
+&lt;li&gt;在未来容器虚拟化（以 Docker 为主）的情况下，模块化的组件更容易部署到这些容器上面，也就很容易发生这样的事情：一台服务器部署非常多模块，成本就会降得更低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;我们已经知道了分布式效益更好，我们也知道分布式的系统都是需要拆分的，对项目进行拆分，把一个大项目拆分成很多小模块项目，然后大家彼此依赖或通信。此时问题来了：如何高效地依赖。&lt;/li&gt;
+&lt;li&gt;高效地依赖解决办法是：自动化的构建 + 持续集成。&lt;ul&gt;
+&lt;li&gt;在目前 Java 界，最常用的构建工具就是：Maven&lt;/li&gt;
+&lt;li&gt;在多模块的项目中，还是以一个电商项目为例，购物车模块肯定是会依赖 core 模块、Parent 模块等，而这些模块的开发者在不同城市或是不同部门。在协同开发中，不可能每次他们一有更新就得专门安排一个人来交付依赖，这种方式效率是非常低的。&lt;/li&gt;
+&lt;li&gt;今天整理这个 Maven 材料其实是为了后面整理持续集成做的准备的，大家必须有这个基础才能说后面的持续集成，后续的持续集成会涉及到：TeamCity、Jenkins、Hudson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Maven-知识&quot;&gt;&lt;a href=&quot;#Maven-知识&quot; class=&quot;headerlink&quot; title=&quot;Maven 知识&quot;&gt;&lt;/a&gt;Maven 知识&lt;/h2&gt;&lt;h3 id=&quot;Maven-是什么&quot;&gt;&lt;a href=&quot;#Maven-是什么&quot; class=&quot;headerlink&quot; title=&quot;Maven 是什么&quot;&gt;&lt;/a&gt;Maven 是什么&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;术语定义&lt;ul&gt;
+&lt;li&gt;Maven 官网：&lt;a href=&quot;http://maven.apache.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.apache.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Maven 官网对自己的定义：&lt;a href=&quot;http://maven.apache.org/what-is-maven.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.apache.org/what-is-maven.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;百度百科定义：&lt;a href=&quot;http://baike.baidu.com/view/336103.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://baike.baidu.com/view/336103.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;维基百科定义：&lt;a href=&quot;https://zh.wikipedia.org/wiki/Apache_Maven&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zh.wikipedia.org/wiki/Apache_Maven&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;在 Wiki 上还需要注意如下，这些有助于你站在更加宏观的角度看待它，但是可能需要积累：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;参见&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;补充阅读&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;参考资料&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;外部链接&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;它的历史&lt;ul&gt;
+&lt;li&gt;Google 搜索：&lt;code&gt;Maven History&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;搜索结果：&lt;ul&gt;
+&lt;li&gt;历史介绍：&lt;a href=&quot;http://maven.apache.org/background/history-of-maven.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.apache.org/background/history-of-maven.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;创始人：&lt;strong&gt;jason van zyl&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;创始人现在：&lt;a href=&quot;http://takari.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://takari.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google 搜索：&lt;code&gt;Maven 区别&lt;/code&gt;、&lt;code&gt;Maven difference&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;搜索结果：&lt;ul&gt;
+&lt;li&gt;人们在关注：&lt;/li&gt;
+&lt;li&gt;gradle maven区别&lt;/li&gt;
+&lt;li&gt;ant maven区别&lt;/li&gt;
+&lt;li&gt;ivy maven区别&lt;/li&gt;
+&lt;li&gt;maven maven2区别&lt;ul&gt;
+&lt;li&gt;通过这个搜索结果我们知道，现阶段我们要的是 Maven 3：&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/news/2011/07/xxb-maven-10-time-to-update&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven实战（十）——Maven 3，是时候升级了&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tech.it168.com/a2010/1108/1123/000001123274_all.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;六年等一回 Maven 3的10大新特性详解&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;同类常见技术（按技术出现时间正序）&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ant&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Gradle&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;同类技术比较：&lt;ul&gt;
+&lt;li&gt;Google 搜索：&lt;code&gt;Ant Maven Gradle&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;搜索结果：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/napolunyishi/article/details/39345995&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Java构建工具：Ant vs Maven vs Gradle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/huang0925/p/5209563.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven和Gradle对比&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;学习前提/依赖&lt;ul&gt;
+&lt;li&gt;要有 Java 基础相关（如果你完全没学过 Java，建议跳过，不适合你）&lt;/li&gt;
+&lt;li&gt;最好有 Java Web 相关知识&lt;/li&gt;
+&lt;li&gt;不需要会 Ant 或是 Maven 早期版本的内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;为什么会出现&quot;&gt;&lt;a href=&quot;#为什么会出现&quot; class=&quot;headerlink&quot; title=&quot;为什么会出现&quot;&gt;&lt;/a&gt;为什么会出现&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Google 搜索：（这些一般都是一些故事，你自己来判断，别人的坎坷是你成长的基石）&lt;ul&gt;
+&lt;li&gt;关键字：&lt;code&gt;为什么用 maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字：&lt;code&gt;why use maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字：&lt;code&gt;What does Maven do&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字：&lt;code&gt;Why do we need Maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字：&lt;code&gt;Why should we use Maven&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;哪些人不喜欢它&quot;&gt;&lt;a href=&quot;#哪些人不喜欢它&quot; class=&quot;headerlink&quot; title=&quot;哪些人不喜欢它&quot;&gt;&lt;/a&gt;哪些人不喜欢它&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Google 搜索：（这些一般都是一些故事，你自己来判断，别人的坎坷是你成长的基石）&lt;ul&gt;
+&lt;li&gt;关键字：&lt;code&gt;不用 maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字：&lt;code&gt;Why I Don&amp;#39;t Use Maven&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;为什么学习它&quot;&gt;&lt;a href=&quot;#为什么学习它&quot; class=&quot;headerlink&quot; title=&quot;为什么学习它&quot;&gt;&lt;/a&gt;为什么学习它&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;构建工具是 Java Web 开发者绕不过去的一道坎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;我要怎么做（按优先级从高到低排序）&quot;&gt;&lt;a href=&quot;#我要怎么做（按优先级从高到低排序）&quot; class=&quot;headerlink&quot; title=&quot;我要怎么做（按优先级从高到低排序）&quot;&gt;&lt;/a&gt;我要怎么做（按优先级从高到低排序）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;看教程&lt;ul&gt;
+&lt;li&gt;官网快速入门文档&lt;ul&gt;
+&lt;li&gt;在官网中查看带有下面几个关键字的链接：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Getting Started&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Quick Start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Getting Started Guides&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;usage page&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tutorials&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Guides&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Development Guides&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Documentation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Docs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Screencasts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Maven 主页上得到字眼有：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://maven.apache.org/guides/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在子页面我们得到：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Getting Started in 5 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://maven.apache.org/guides/getting-started/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Getting Started in 30 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在极客学院搜索对应的教学视频（我是年 VIP）&lt;ul&gt;
+&lt;li&gt;极客学院对 Maven 的讲解比较到位，从初级到中级都涵盖（需要 VIP 权限）：&lt;/li&gt;
+&lt;li&gt;Maven 概述及安装，包含下面内容：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Maven 概述及安装&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;在 Mac 电脑上安装及配置 Maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;在 Windows 电脑上安装及配置 Maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;在 Linux 电脑上安装及配置 Maven&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/571.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/571.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Maven 核心概念讲解，包含下面内容：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;POM概述&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;插件与目标&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;项目的生命周期阶段&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/866.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/866.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在工具中使用 Maven，包含下面内容：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;使用命令行工具构建一个 Maven 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 Eclipse 构建一个 Maven 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 IntelliJIDEA 构建一个 Maven 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/580_1.html?ss=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/580_1.html?ss=1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用 Maven 构建 Web 项目，包含下面内容：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;创建一个Web项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 Tomcat 插件运行 Web 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 Jetty 插件运行 Web 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;添加 J2EE 依赖&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;创建 JSP 和 Servlet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;在 Eclipse 中使用 Maven 构建 Web 项目&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/908.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/908.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/951.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/951.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用 Maven 构建多模块项目&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;多模块项目介绍&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;创建 helloweb 项目的骨架结构&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;将 helloweb 项目导入 Eclipse&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 dependencyManagement 管理依赖&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 pluginManagement 管理插件&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;定义项目属性及配置信息&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;完善 helloweb-entity 模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;完善 helloweb-core 模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;完善 helloweb-web 模块&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 log4j 打印日志&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 junit 进行单元测试&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;使用 guava 美化代码&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/957.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/957.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/964.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/964.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/977.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/977.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;地址：&lt;a href=&quot;http://www.jikexueyuan.com/course/989.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/course/989.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;极客学院上整理得很好的文字教程：&lt;a href=&quot;http://wiki.jikexueyuan.com/project/maven/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wiki.jikexueyuan.com/project/maven/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;国外著名的教程网：&lt;a href=&quot;http://www.tutorialspoint.com/maven/index.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tutorialspoint.com/maven/index.htm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google 搜索：&lt;code&gt;Maven 视频 教程 百度云网盘&lt;/code&gt;    &lt;/li&gt;
+&lt;li&gt;Google 搜索：&lt;code&gt;Maven 视频 教程&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;简书-搜索相关内容：&lt;a href=&quot;http://www.jianshu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;知乎-搜索相关内容：&lt;a href=&quot;http://www.zhihu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quora-搜索相关内容：&lt;a href=&quot;https://www.quora.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.quora.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;微博-搜索相关内容：&lt;a href=&quot;http://weibo.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weibo.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;公众号-搜索相关内容：&lt;a href=&quot;http://weixin.sogou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://weixin.sogou.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;开发者头条-搜索相关内容：&lt;a href=&quot;http://toutiao.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://toutiao.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;京东-图书：&lt;a href=&quot;http://book.jd.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://book.jd.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YouTube-搜索相关内容：&lt;a href=&quot;http://youtube.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://youtube.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自己写 Demo&lt;ul&gt;
+&lt;li&gt;Maven 下载地址：&lt;a href=&quot;http://maven.apache.org/download.cgi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.apache.org/download.cgi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;此时（2016-03-10）最新版本为：&lt;strong&gt;Apache Maven 3.3.9&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;JDK 要求：Maven 3.3 要求 JDK 1.7 或是更新，其他版本无&lt;/li&gt;
+&lt;li&gt;操作系统没要求，官网原话：&lt;code&gt;No minimum requirement. Start up scripts are included as shell scripts and Windows batch files&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;但是，按系统常见压缩格式，我个人建议：&lt;/li&gt;
+&lt;li&gt;Windows 下载的文件：&lt;strong&gt;apache-maven-版本号-bin.zip&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;类 Unix 下载的文件：&lt;strong&gt;apache-maven-版本号-bin.tar.gz&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;我这里以 Maven 3.1 进行安装为例（Windows 系统）：&lt;ul&gt;
+&lt;li&gt;安装：&lt;ul&gt;
+&lt;li&gt;我的 Maven 解压目录发在 D 盘根目录下&lt;/li&gt;
+&lt;li&gt;新增系统变量：&lt;code&gt;JAVA_HOME  ===  C:\Program Files\Java\jdk1.6.0_23&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新增系统变量：&lt;code&gt;M2_HOME  ===  D:\maven\maven3.1.1&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;需要注意的是变量名就叫这个 &lt;code&gt;M2_HOME&lt;/code&gt;，不要改其他的，因为 TeamCity 这类工具它会默认去找该变量一致的内容自动帮我们匹配构建环境的，所以我们就按官方约定来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在系统变量 Path 中增加：&lt;code&gt;;%JAVA_HOME%\bin;%M2_HOME%\bin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;测试：&lt;ul&gt;
+&lt;li&gt;打开 cmd&lt;/li&gt;
+&lt;li&gt;输入：&lt;code&gt;java -version&lt;/code&gt;，能显示 Java 版本信息即表示 JAVA_HOME 设置好了&lt;/li&gt;
+&lt;li&gt;输入：&lt;code&gt;mvn –v&lt;/code&gt;，能显示 Maven 版本信息即表示 M2_HOME 设置好了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;参考别人 Demo&lt;ul&gt;
+&lt;li&gt;通过上面的学习，我们知道，我们要学习别人的 Maven 配置，只要能看懂他们的 POM 文件配置即可，所以现在你需要做的是找一些开源项目，读懂他们的 POM&lt;/li&gt;
+&lt;li&gt;Gtihub 搜索 Demo：&lt;a href=&quot;https://github.com/search/advanced&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/search/advanced&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Git@OSC 搜索 Demo：&lt;a href=&quot;http://git.oschina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://git.oschina.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;项目场景模拟、提高&lt;ul&gt;
+&lt;li&gt;我现在所有的 Java 相关的项目都是 Maven 构建的&lt;/li&gt;
+&lt;li&gt;自己做持续集成的话，有 Nexus 做私有仓库&lt;/li&gt;
+&lt;li&gt;平时开发连接的是：&lt;strong&gt;开源中国 Maven 库&lt;/strong&gt;：&lt;ul&gt;
+&lt;li&gt;使用技巧：&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://maven.oschina.net/help.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.oschina.net/help.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://my.oschina.net/huangyong/blog/180189&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://my.oschina.net/huangyong/blog/180189&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;POM 依赖 jar 常去的查找地：&lt;ul&gt;
+&lt;li&gt;官网：&lt;a href=&quot;http://search.maven.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://search.maven.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;开源中国：&lt;a href=&quot;http://maven.oschina.net/home.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://maven.oschina.net/home.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nexus 库：&lt;a href=&quot;https://repository.sonatype.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://repository.sonatype.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MVNRepository：&lt;a href=&quot;http://mvnrepository.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mvnrepository.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;遇到问题&lt;ul&gt;
+&lt;li&gt;官网 FAQ：&lt;a href=&quot;https://maven.apache.org/general.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://maven.apache.org/general.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google&lt;/li&gt;
+&lt;li&gt;Stack Overflow：&lt;a href=&quot;http://stackoverflow.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;资料整理&quot;&gt;&lt;a href=&quot;#资料整理&quot; class=&quot;headerlink&quot; title=&quot;资料整理&quot;&gt;&lt;/a&gt;资料整理&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;来自 Google 过程中的资料（真心感谢这些作者）：&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000000640821&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven重要概念及最佳实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mritd.me/2015/12/31/Maven-%E6%95%99%E7%A8%8B/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven 教程 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.trinea.cn/android/maven/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven介绍，包括作用、核心概念、用法、常用命令、扩展及配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/haippy/archive/2012/07/04/2576453.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;7天学会Maven（第一天——了解 Maven）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/haippy/archive/2012/07/05/2577233.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;7天学会Maven（第二天——Maven 标准目录结构）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/zhaoyang/archive/2012/01/07/2315443.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven 3 入门 – 安装与配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sxyx2008/article/details/8725220&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven之pom中文详解&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://my.oschina.net/MyHeaven1987/blog/99781?fromerr=07XUhoR7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;maven中的依赖机制简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://my.oschina.net/MyHeaven1987/blog/100704?fromerr=SWanTA4V&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;maven中的仓库简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/bigtall/archive/2011/03/23/1993253.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;maven常见问题问答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://drizzlewalk.blog.51cto.com/2203401/665590&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;maven scope含义的说明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/news/2011/06/xxb-maven-9-package&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven实战（九）——打包的技巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sxyx2008/article/details/7959220&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven仓库汇总&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/iusmile/archive/2012/11/14/2770118.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven 的41种骨架功能介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/zht666/article/details/8673609&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;IntelliJ IDEA 12创建Maven管理的Java Web项目（图解）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sxyx2008/article/details/7975129&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;对maven私服配置的说明 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;过程细节&quot;&gt;&lt;a href=&quot;#过程细节&quot; class=&quot;headerlink&quot; title=&quot;过程细节&quot;&gt;&lt;/a&gt;过程细节&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;过去 2014 年里，基本上关于 Maven 的知识都是在 Google 上搜索出来的。&lt;/li&gt;
+&lt;li&gt;在 2015 年才看到极客学院上面有成套资料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;结束语&quot;&gt;&lt;a href=&quot;#结束语&quot; class=&quot;headerlink&quot; title=&quot;结束语&quot;&gt;&lt;/a&gt;结束语&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Maven 也许开始要过时了，但是即使 Gradle 的时代要到来了，你会害怕吗？我想你不会的，因为你会学习知识的方法，更而且他们还差不多。&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+    <summary type="html">
+    
+      如果你是学习 Java 或是说 JVM 语言相关的内容的话，在实际使用中有一个东西你是绕不过去的，构建工具。等你到企业还有一个东西你也绕不过去，持续集成。
+    
+    </summary>
+    
+      <category term="Java" scheme="http://code.youmeek.com/categories/Java/"/>
+    
+    
+      <category term="CI" scheme="http://code.youmeek.com/tags/CI/"/>
+    
+      <category term="Java" scheme="http://code.youmeek.com/tags/Java/"/>
+    
+      <category term="Maven" scheme="http://code.youmeek.com/tags/Maven/"/>
+    
+  </entry>
   
   <entry>
     <title>我的学习、归纳方法（以学习 Maven 为例）</title>
