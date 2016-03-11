@@ -648,7 +648,7 @@
     <link href="http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/"/>
     <id>http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/</id>
     <published>2016-02-29T15:43:30.000Z</published>
-    <updated>2016-03-08T11:58:43.945Z</updated>
+    <updated>2016-03-11T13:01:25.167Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;主题优化&quot;&gt;&lt;a href=&quot;#主题优化&quot; class=&quot;headerlink&quot; title=&quot;主题优化&quot;&gt;&lt;/a&gt;主题优化&lt;/h2&gt;&lt;h3 id=&quot;主题配置介绍&quot;&gt;&lt;a href=&quot;#主题配置介绍&quot; class=&quot;headerlink&quot; title=&quot;主题配置介绍&quot;&gt;&lt;/a&gt;主题配置介绍&lt;/h3&gt;&lt;p&gt;我这里只讲自己在使用的 yelle 主题，你可以参考下，可能还有一些改动我后续会自己在慢慢改，但是大体基本也就这样了。&lt;/p&gt;
@@ -680,6 +680,7 @@ Disallow: /js
 Sitemap: http://code.youmeek.com/sitemap.xml
 Sitemap: http://code.youmeek.com/baidusitemap.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;插件推荐&quot;&gt;&lt;a href=&quot;#插件推荐&quot; class=&quot;headerlink&quot; title=&quot;插件推荐&quot;&gt;&lt;/a&gt;插件推荐&lt;/h2&gt;&lt;h3 id=&quot;插件的基本使用命令&quot;&gt;&lt;a href=&quot;#插件的基本使用命令&quot; class=&quot;headerlink&quot; title=&quot;插件的基本使用命令&quot;&gt;&lt;/a&gt;插件的基本使用命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;插件官网：&lt;a href=&quot;https://hexo.io/plugins/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/plugins/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;安装插件：&lt;code&gt;npm install 插件名 --save&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;卸载插件：&lt;code&gt;npm uninstall 插件名&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;更新插件和博客框架（需要在 E:\git_work_space\hexo 目录下）：&lt;code&gt;npm update&lt;/code&gt;&lt;ul&gt;
@@ -718,7 +719,7 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
     <link href="http://code.youmeek.com/2016/02/28/2016/02/Hexo/"/>
     <id>http://code.youmeek.com/2016/02/28/2016/02/Hexo/</id>
     <published>2016-02-28T09:58:27.000Z</published>
-    <updated>2016-03-08T11:58:43.958Z</updated>
+    <updated>2016-03-11T12:55:19.411Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;部署前介绍&quot;&gt;&lt;a href=&quot;#部署前介绍&quot; class=&quot;headerlink&quot; title=&quot;部署前介绍&quot;&gt;&lt;/a&gt;部署前介绍&lt;/h2&gt;&lt;h3 id=&quot;Hexo-是什么&quot;&gt;&lt;a href=&quot;#Hexo-是什么&quot; class=&quot;headerlink&quot; title=&quot;Hexo 是什么&quot;&gt;&lt;/a&gt;Hexo 是什么&lt;/h3&gt;&lt;ul&gt;
@@ -772,15 +773,15 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
 &lt;/ul&gt;
 &lt;h3 id=&quot;文章前提&quot;&gt;&lt;a href=&quot;#文章前提&quot; class=&quot;headerlink&quot; title=&quot;文章前提&quot;&gt;&lt;/a&gt;文章前提&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;如果你对上面要求的软件一个都不了解的话，建议你先看如下内容（只是让你们先了解下，当时别照着文章内容做）：&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/05289a4bc8b2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/858ecf233db9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/858ecf233db9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ibruce.info/2013/11/22/hexo-your-blog/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/701b1095da11&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/701b1095da11&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/05289a4bc8b2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e858a90d0a17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/e858a90d0a17&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/db7e64d86067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/db7e64d86067&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://mritd.me/2015/12/31/Github-%E6%90%AD%E5%BB%BA-Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mritd.me/2015/12/31/Github-%E6%90%AD%E5%BB%BA-Hexo-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e7413116e9d4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/e7413116e9d4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何搭建一个独立博客——简明Github Pages与Hexo教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/858ecf233db9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;通过Hexo在Github上搭建博客教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ibruce.info/2013/11/22/hexo-your-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo你的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/701b1095da11&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;手把手教你建github技术博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/05289a4bc8b2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何搭建一个独立博客——简明Github Pages与Hexo教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e858a90d0a17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;windows下搭建hexo博客并将其部署到GitCafe终极教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/db7e64d86067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Hexo搭建博客（三），博客配置、主题和写作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e7413116e9d4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo搭建WiKi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/28058973&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;怎么用hexo上传一个README.md到github?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
