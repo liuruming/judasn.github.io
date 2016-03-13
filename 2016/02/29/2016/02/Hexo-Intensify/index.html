@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/index.html">
 <meta property="og:site_name" content="YouMeek Code">
 <meta property="og:description" content="本文将讲解 Hexo 博客的常用插件、站点 SEO 等内容！">
-<meta property="og:updated_time" content="2016-03-11T13:01:25.167Z">
+<meta property="og:updated_time" content="2016-03-13T14:16:33.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建 Hexo 博客--增强篇">
 <meta name="twitter:description" content="本文将讲解 Hexo 博客的常用插件、站点 SEO 等内容！">
@@ -173,7 +173,7 @@
                     
                       <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/">GitHub</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/judasn/IntelliJ-IDEA-Tutorial">IntelliJ IDEA</a>
                     
                     </div>
                 </section>
@@ -290,17 +290,11 @@
 <li>新增一个 robot.txt 文件，把该文件放在：E:\git_work_space\hexo\source 目录下，如果你没有该文件可以到我的项目上找：<a href="https://github.com/judasn/judasn.github.io" target="_blank" rel="external">https://github.com/judasn/judasn.github.io</a></li>
 <li>robot 文件内容：</li>
 </ul>
-<pre><code>User-Agent: *
-Allow: /
-Disallow: /background
-Disallow: /css
-Disallow: /fancybox
-Disallow: /font-awesome
-Disallow: /img
-Disallow: /js
-Sitemap: http://code.youmeek.com/sitemap.xml
-Sitemap: http://code.youmeek.com/baidusitemap.xml
-</code></pre><h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="插件的基本使用命令"><a href="#插件的基本使用命令" class="headerlink" title="插件的基本使用命令"></a>插件的基本使用命令</h3><ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">User-Agent: *&#10;Allow: /&#10;Disallow: /background&#10;Disallow: /css&#10;Disallow: /fancybox&#10;Disallow: /font-awesome&#10;Disallow: /img&#10;Disallow: /js&#10;Sitemap: http://code.youmeek.com/sitemap.xml&#10;Sitemap: http://code.youmeek.com/baidusitemap.xml&#10;``` &#10;&#10;&#10;### &#32622;&#39030;&#25991;&#31456;&#10;&#10;- [&#35299;&#20915;Hexo&#32622;&#39030;&#38382;&#39064;](http://www.netcan666.com/2015/11/22/%E8%A7%A3%E5%86%B3Hexo%E7%BD%AE%E9%A1%B6%E9%97%AE%E9%A2%98/)&#10;- &#32534;&#36753;&#36825;&#20010;&#25991;&#20214;&#65306;`node_modules/hexo-generator-index/lib/generator.js`&#10;- &#35206;&#30422;&#21407;&#25991;&#20214;&#20869;&#23481;&#65292;&#37319;&#29992;&#19979;&#38754;&#20869;&#23481;&#65306;&#10;&#10;``` bash&#10;&#39;use strict&#39;;&#10;&#10;var pagination = require(&#39;hexo-pagination&#39;);&#10;&#10;module.exports = function(locals)&#123;&#10;  var config = this.config;&#10;  var posts = locals.posts;&#10;&#10;    posts.data = posts.data.sort(function(a, b) &#123;&#10;        if(a.top &#38;&#38; b.top) &#123; // &#20004;&#31687;&#25991;&#31456;top&#37117;&#26377;&#23450;&#20041;&#10;            if(a.top == b.top) return b.date - a.date; // &#33509;top&#20540;&#19968;&#26679;&#21017;&#25353;&#29031;&#25991;&#31456;&#26085;&#26399;&#38477;&#24207;&#25490;&#10;            else return b.top - a.top; // &#21542;&#21017;&#25353;&#29031;top&#20540;&#38477;&#24207;&#25490;&#10;        &#125;&#10;        else if(a.top &#38;&#38; !b.top) &#123; // &#20197;&#19979;&#26159;&#21482;&#26377;&#19968;&#31687;&#25991;&#31456;top&#26377;&#23450;&#20041;&#65292;&#37027;&#20040;&#23558;&#26377;top&#30340;&#25490;&#22312;&#21069;&#38754;&#65288;&#36825;&#37324;&#29992;&#24322;&#25110;&#25805;&#20316;&#23621;&#28982;&#19981;&#34892;233&#65289;&#10;            return -1;&#10;        &#125;&#10;        else if(!a.top &#38;&#38; b.top) &#123;&#10;            return 1;&#10;        &#125;&#10;        else return b.date - a.date; // &#37117;&#27809;&#23450;&#20041;&#25353;&#29031;&#25991;&#31456;&#26085;&#26399;&#38477;&#24207;&#25490;&#10;&#10;    &#125;);&#10;&#10;  var paginationDir = config.pagination_dir || &#39;page&#39;;&#10;&#10;  return pagination(&#39;&#39;, posts, &#123;&#10;    perPage: config.index_generator.per_page,&#10;    layout: [&#39;index&#39;, &#39;archive&#39;],&#10;    format: paginationDir + &#39;/%d/&#39;,&#10;    data: &#123;&#10;      __index: true&#10;    &#125;&#10;  &#125;);&#10;&#125;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>然后在文章头部的：Front-matter 位置加上一个：<code>top: 1000</code> 的内容。数值越大，越靠前</li>
+</ul>
+<h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><h3 id="插件的基本使用命令"><a href="#插件的基本使用命令" class="headerlink" title="插件的基本使用命令"></a>插件的基本使用命令</h3><ul>
 <li>插件官网：<a href="https://hexo.io/plugins/" target="_blank" rel="external">https://hexo.io/plugins/</a></li>
 <li>安装插件：<code>npm install 插件名 --save</code></li>
 <li>卸载插件：<code>npm uninstall 插件名</code></li>
@@ -330,7 +324,7 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
         <p><span>本文标题:</span><a href="/2016/02/29/2016/02/Hexo-Intensify/">搭建 Hexo 博客--增强篇</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Judas.n 的个人博客">Judas.n</a></p>
         <p><span>发布时间:</span>2016年02月29日 - 23时43分</p>
-        <p><span>最后更新:</span>2016年03月11日 - 21时01分</p>
+        <p><span>最后更新:</span>2016年03月13日 - 22时16分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/02/29/2016/02/Hexo-Intensify/" title="搭建 Hexo 博客--增强篇">http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/</a>
             <span class="copy-path" data-clipboard-text="原文: http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/　　作者: Judas.n" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -347,7 +341,7 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/03/07/2016/03/My-Learning-Way/">
+                <a href="/2016/03/07/2016/02/My-Learning-Way/">
                     我的学习、归纳方法（以学习 Maven 为例）
                 </a>
             </div>
@@ -451,7 +445,7 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
 
 <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/03/07/2016/03/My-Learning-Way/" title="上一篇: 我的学习、归纳方法（以学习 Maven 为例）">
+            <a href="/2016/03/07/2016/02/My-Learning-Way/" title="上一篇: 我的学习、归纳方法（以学习 Maven 为例）">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -465,7 +459,7 @@ Sitemap: http://code.youmeek.com/baidusitemap.xml
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/11/2016/03/IntelliJ-IDEA-ER/">为什么不尝试下 IntelliJ IDEA？我想劝说你</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/09/2016/03/Maven/">构建工具-Maven-相关知识-整理专题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/07/2016/03/My-Learning-Way/">我的学习、归纳方法（以学习 Maven 为例）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/2016/02/Hexo-Intensify/">搭建 Hexo 博客--增强篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/2016/02/Hexo/">使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/11/2016/03/IntelliJ-IDEA-ER/">为什么不尝试下 IntelliJ IDEA？我想劝说你</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/09/2016/03/Maven/">构建工具-Maven-相关知识-整理专题</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/07/2016/02/My-Learning-Way/">我的学习、归纳方法（以学习 Maven 为例）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/29/2016/02/Hexo-Intensify/">搭建 Hexo 博客--增强篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/28/2016/02/Hexo/">使用 Github 空间搭建 Hexo 技术博客--安装篇（基于 IntelliJ IDEA）</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");

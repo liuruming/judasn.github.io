@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/</loc>
-    <lastmod>2016-03-11T13:01:25.167Z</lastmod>
+    <lastmod>2016-03-13T14:16:33.794Z</lastmod>
     <data>
         <display>
         <title>搭建 Hexo 博客--增强篇</title>
@@ -17,6 +17,57 @@
            
              
               <breadCrumb title="Hexo" url="http://code.youmeek.com/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/</loc>
+    <lastmod>2016-03-13T13:39:05.766Z</lastmod>
+    <data>
+        <display>
+        <title>我的学习、归纳方法（以学习 Maven 为例）</title>
+        <pubTime>2016-03-07T12:50:25.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Maven</tag>
+         
+        <tag>学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习方法" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="Java" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://code.youmeek.com/2016/03/09/2016/03/Maven/</loc>
+    <lastmod>2016-03-13T13:35:00.732Z</lastmod>
+    <data>
+        <display>
+        <title>构建工具-Maven-相关知识-整理专题</title>
+        <pubTime>2016-03-09T11:56:08.000Z</pubTime>
+        
+        <tag>CI</tag>
+         
+        <tag>Java</tag>
+         
+        <tag>Maven</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://code.youmeek.com/categories/Java/"/>
           
         </display>
     </data>
@@ -74,57 +125,6 @@
           
              
               <breadCrumb title="Java" url="http://code.youmeek.com/categories/IntelliJ-IDEA/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://code.youmeek.com/2016/03/09/2016/03/Maven/</loc>
-    <lastmod>2016-03-10T11:48:15.646Z</lastmod>
-    <data>
-        <display>
-        <title>构建工具-Maven-相关知识-整理专题</title>
-        <pubTime>2016-03-09T11:56:08.000Z</pubTime>
-        
-        <tag>CI</tag>
-         
-        <tag>Java</tag>
-         
-        <tag>Maven</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://code.youmeek.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://code.youmeek.com/2016/03/07/2016/03/My-Learning-Way/</loc>
-    <lastmod>2016-03-09T14:41:39.518Z</lastmod>
-    <data>
-        <display>
-        <title>我的学习、归纳方法（以学习 Maven 为例）</title>
-        <pubTime>2016-03-07T12:50:25.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>Maven</tag>
-         
-        <tag>学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习方法" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
-          
-             
-              <breadCrumb title="Java" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/Java/"/>
           
         </display>
     </data>

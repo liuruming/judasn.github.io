@@ -109,7 +109,7 @@
     <link href="http://code.youmeek.com/2016/03/09/2016/03/Maven/"/>
     <id>http://code.youmeek.com/2016/03/09/2016/03/Maven/</id>
     <published>2016-03-09T11:56:08.000Z</published>
-    <updated>2016-03-10T11:48:15.646Z</updated>
+    <updated>2016-03-13T13:35:00.732Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文初衷&quot;&gt;&lt;a href=&quot;#本文初衷&quot; class=&quot;headerlink&quot; title=&quot;本文初衷&quot;&gt;&lt;/a&gt;本文初衷&lt;/h2&gt;&lt;ul&gt;
@@ -456,10 +456,10 @@
   
   <entry>
     <title>我的学习、归纳方法（以学习 Maven 为例）</title>
-    <link href="http://code.youmeek.com/2016/03/07/2016/03/My-Learning-Way/"/>
-    <id>http://code.youmeek.com/2016/03/07/2016/03/My-Learning-Way/</id>
+    <link href="http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/"/>
+    <id>http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/</id>
     <published>2016-03-07T12:50:25.000Z</published>
-    <updated>2016-03-09T14:41:39.518Z</updated>
+    <updated>2016-03-13T13:39:05.766Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文-Markdown-源文件地址&quot;&gt;&lt;a href=&quot;#本文-Markdown-源文件地址&quot; class=&quot;headerlink&quot; title=&quot;本文 Markdown 源文件地址&quot;&gt;&lt;/a&gt;本文 Markdown 源文件地址&lt;/h2&gt;&lt;ul&gt;
@@ -648,7 +648,7 @@
     <link href="http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/"/>
     <id>http://code.youmeek.com/2016/02/29/2016/02/Hexo-Intensify/</id>
     <published>2016-02-29T15:43:30.000Z</published>
-    <updated>2016-03-11T13:01:25.167Z</updated>
+    <updated>2016-03-13T14:16:33.794Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;主题优化&quot;&gt;&lt;a href=&quot;#主题优化&quot; class=&quot;headerlink&quot; title=&quot;主题优化&quot;&gt;&lt;/a&gt;主题优化&lt;/h2&gt;&lt;h3 id=&quot;主题配置介绍&quot;&gt;&lt;a href=&quot;#主题配置介绍&quot; class=&quot;headerlink&quot; title=&quot;主题配置介绍&quot;&gt;&lt;/a&gt;主题配置介绍&lt;/h3&gt;&lt;p&gt;我这里只讲自己在使用的 yelle 主题，你可以参考下，可能还有一些改动我后续会自己在慢慢改，但是大体基本也就这样了。&lt;/p&gt;
@@ -669,17 +669,11 @@
 &lt;li&gt;新增一个 robot.txt 文件，把该文件放在：E:\git_work_space\hexo\source 目录下，如果你没有该文件可以到我的项目上找：&lt;a href=&quot;https://github.com/judasn/judasn.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/judasn/judasn.github.io&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;robot 文件内容：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;User-Agent: *
-Allow: /
-Disallow: /background
-Disallow: /css
-Disallow: /fancybox
-Disallow: /font-awesome
-Disallow: /img
-Disallow: /js
-Sitemap: http://code.youmeek.com/sitemap.xml
-Sitemap: http://code.youmeek.com/baidusitemap.xml
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;插件推荐&quot;&gt;&lt;a href=&quot;#插件推荐&quot; class=&quot;headerlink&quot; title=&quot;插件推荐&quot;&gt;&lt;/a&gt;插件推荐&lt;/h2&gt;&lt;h3 id=&quot;插件的基本使用命令&quot;&gt;&lt;a href=&quot;#插件的基本使用命令&quot; class=&quot;headerlink&quot; title=&quot;插件的基本使用命令&quot;&gt;&lt;/a&gt;插件的基本使用命令&lt;/h3&gt;&lt;ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;User-Agent: *&amp;#10;Allow: /&amp;#10;Disallow: /background&amp;#10;Disallow: /css&amp;#10;Disallow: /fancybox&amp;#10;Disallow: /font-awesome&amp;#10;Disallow: /img&amp;#10;Disallow: /js&amp;#10;Sitemap: http://code.youmeek.com/sitemap.xml&amp;#10;Sitemap: http://code.youmeek.com/baidusitemap.xml&amp;#10;``` &amp;#10;&amp;#10;&amp;#10;### &amp;#32622;&amp;#39030;&amp;#25991;&amp;#31456;&amp;#10;&amp;#10;- [&amp;#35299;&amp;#20915;Hexo&amp;#32622;&amp;#39030;&amp;#38382;&amp;#39064;](http://www.netcan666.com/2015/11/22/%E8%A7%A3%E5%86%B3Hexo%E7%BD%AE%E9%A1%B6%E9%97%AE%E9%A2%98/)&amp;#10;- &amp;#32534;&amp;#36753;&amp;#36825;&amp;#20010;&amp;#25991;&amp;#20214;&amp;#65306;`node_modules/hexo-generator-index/lib/generator.js`&amp;#10;- &amp;#35206;&amp;#30422;&amp;#21407;&amp;#25991;&amp;#20214;&amp;#20869;&amp;#23481;&amp;#65292;&amp;#37319;&amp;#29992;&amp;#19979;&amp;#38754;&amp;#20869;&amp;#23481;&amp;#65306;&amp;#10;&amp;#10;``` bash&amp;#10;&amp;#39;use strict&amp;#39;;&amp;#10;&amp;#10;var pagination = require(&amp;#39;hexo-pagination&amp;#39;);&amp;#10;&amp;#10;module.exports = function(locals)&amp;#123;&amp;#10;  var config = this.config;&amp;#10;  var posts = locals.posts;&amp;#10;&amp;#10;    posts.data = posts.data.sort(function(a, b) &amp;#123;&amp;#10;        if(a.top &amp;#38;&amp;#38; b.top) &amp;#123; // &amp;#20004;&amp;#31687;&amp;#25991;&amp;#31456;top&amp;#37117;&amp;#26377;&amp;#23450;&amp;#20041;&amp;#10;            if(a.top == b.top) return b.date - a.date; // &amp;#33509;top&amp;#20540;&amp;#19968;&amp;#26679;&amp;#21017;&amp;#25353;&amp;#29031;&amp;#25991;&amp;#31456;&amp;#26085;&amp;#26399;&amp;#38477;&amp;#24207;&amp;#25490;&amp;#10;            else return b.top - a.top; // &amp;#21542;&amp;#21017;&amp;#25353;&amp;#29031;top&amp;#20540;&amp;#38477;&amp;#24207;&amp;#25490;&amp;#10;        &amp;#125;&amp;#10;        else if(a.top &amp;#38;&amp;#38; !b.top) &amp;#123; // &amp;#20197;&amp;#19979;&amp;#26159;&amp;#21482;&amp;#26377;&amp;#19968;&amp;#31687;&amp;#25991;&amp;#31456;top&amp;#26377;&amp;#23450;&amp;#20041;&amp;#65292;&amp;#37027;&amp;#20040;&amp;#23558;&amp;#26377;top&amp;#30340;&amp;#25490;&amp;#22312;&amp;#21069;&amp;#38754;&amp;#65288;&amp;#36825;&amp;#37324;&amp;#29992;&amp;#24322;&amp;#25110;&amp;#25805;&amp;#20316;&amp;#23621;&amp;#28982;&amp;#19981;&amp;#34892;233&amp;#65289;&amp;#10;            return -1;&amp;#10;        &amp;#125;&amp;#10;        else if(!a.top &amp;#38;&amp;#38; b.top) &amp;#123;&amp;#10;            return 1;&amp;#10;        &amp;#125;&amp;#10;        else return b.date - a.date; // &amp;#37117;&amp;#27809;&amp;#23450;&amp;#20041;&amp;#25353;&amp;#29031;&amp;#25991;&amp;#31456;&amp;#26085;&amp;#26399;&amp;#38477;&amp;#24207;&amp;#25490;&amp;#10;&amp;#10;    &amp;#125;);&amp;#10;&amp;#10;  var paginationDir = config.pagination_dir || &amp;#39;page&amp;#39;;&amp;#10;&amp;#10;  return pagination(&amp;#39;&amp;#39;, posts, &amp;#123;&amp;#10;    perPage: config.index_generator.per_page,&amp;#10;    layout: [&amp;#39;index&amp;#39;, &amp;#39;archive&amp;#39;],&amp;#10;    format: paginationDir + &amp;#39;/%d/&amp;#39;,&amp;#10;    data: &amp;#123;&amp;#10;      __index: true&amp;#10;    &amp;#125;&amp;#10;  &amp;#125;);&amp;#10;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;然后在文章头部的：Front-matter 位置加上一个：&lt;code&gt;top: 1000&lt;/code&gt; 的内容。数值越大，越靠前&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;插件推荐&quot;&gt;&lt;a href=&quot;#插件推荐&quot; class=&quot;headerlink&quot; title=&quot;插件推荐&quot;&gt;&lt;/a&gt;插件推荐&lt;/h2&gt;&lt;h3 id=&quot;插件的基本使用命令&quot;&gt;&lt;a href=&quot;#插件的基本使用命令&quot; class=&quot;headerlink&quot; title=&quot;插件的基本使用命令&quot;&gt;&lt;/a&gt;插件的基本使用命令&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;插件官网：&lt;a href=&quot;https://hexo.io/plugins/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/plugins/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;安装插件：&lt;code&gt;npm install 插件名 --save&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;卸载插件：&lt;code&gt;npm uninstall 插件名&lt;/code&gt;&lt;/li&gt;
