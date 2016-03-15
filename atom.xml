@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-11T12:24:38.893Z</updated>
+  <updated>2016-03-15T14:03:28.899Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -14,6 +14,141 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 开发基础规范（初稿）</title>
+    <link href="http://code.youmeek.com/2016/03/15/2016/03/Java-Style/"/>
+    <id>http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</id>
+    <published>2016-03-15T13:09:27.000Z</published>
+    <updated>2016-03-15T14:03:28.899Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.youmeek.com/2016/java-style.jpg&quot; alt=&quot;IntelliJ IDEA&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;本文初衷&quot;&gt;&lt;a href=&quot;#本文初衷&quot; class=&quot;headerlink&quot; title=&quot;本文初衷&quot;&gt;&lt;/a&gt;本文初衷&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;以本篇为引，获取到有识之士的一些意见或是看法，促进成长！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;命名、规范&quot;&gt;&lt;a href=&quot;#命名、规范&quot; class=&quot;headerlink&quot; title=&quot;命名、规范&quot;&gt;&lt;/a&gt;命名、规范&lt;/h2&gt;&lt;h3 id=&quot;Java-相关命名、规范&quot;&gt;&lt;a href=&quot;#Java-相关命名、规范&quot; class=&quot;headerlink&quot; title=&quot;Java 相关命名、规范&quot;&gt;&lt;/a&gt;Java 相关命名、规范&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;命名：&lt;ul&gt;
+&lt;li&gt;Java 类名命名&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;普通类名&lt;/strong&gt;：首字母大写，需要两个、多个单词表达的，使用大驼峰命名法进行命名，&lt;code&gt;eg：CategoryService&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;抽象类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Abstract，&lt;code&gt;eg：CategoryAbstract&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自定义异常类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Exception，&lt;code&gt;eg：CategoryException&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;队列类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Queue，&lt;code&gt;eg：CategoryQueue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;后台任务类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Task 或 Job，&lt;code&gt;eg：CategoryTask、CategoryJob&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;测试类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Test，&lt;code&gt;eg：CategoryServiceTest&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库访问层类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryDao&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;业务层接口类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryService&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;业务层实现类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryServiceImpl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制层类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryController、CategoryAction、CategoryActivity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对象扩展类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryVO(Value Object)、CategoryDTO(Data Transfer Object)、CategoryPOJO(plain ordinary java object)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;常量名&lt;/strong&gt;：全部字母大写，有多个单词用下划线分隔，&lt;code&gt;eg：MY_AGE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;常规变量名&lt;/strong&gt;：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，&lt;code&gt;eg：categoryName&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;复数变量名&lt;/strong&gt;：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，eg：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;List：categoryList&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Map：categoryMap&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Set：categorySet&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;package 名&lt;/strong&gt;：所有单词全部小写，即使有多个单词组成，且不能使用下划线连接，或是其他任意字符连接，&lt;code&gt;eg：googlebook&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法参数名&lt;/strong&gt;：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，&lt;code&gt;eg：categoryName&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;方法命名：&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;数据库访问层方法名&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;saveCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deleteCategoryByObject()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deleteCategoryById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updateCategoryByObject()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updateCategoryById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findCategoryList()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;业务层方法名&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;saveCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deleteCategoryByObject()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deleteCategoryById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updateCategoryByObject()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;updateCategoryById()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findCategoryList()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;规范：&lt;ul&gt;
+&lt;li&gt;当一个类有多个构造函数，或是多个同名方法，这些函数 / 方法应该按顺序出现在一起，中间不要放进其它函数 / 方法&lt;/li&gt;
+&lt;li&gt;导入包的时候，import 后面不要使用通配符 * 来代替有些包的导入&lt;/li&gt;
+&lt;li&gt;大括号与 if, else, for, do, while 语句一起使用，即使只有一条语句(或是空)，也应该把大括号写上&lt;/li&gt;
+&lt;li&gt;不要使用组合声明，比如 int a, b;&lt;/li&gt;
+&lt;li&gt;需要时才声明，并尽快进行初始化&lt;/li&gt;
+&lt;li&gt;注解紧跟在文档块后面，应用于类、方法和构造函数，一个注解独占一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注释：&lt;/li&gt;
+&lt;li&gt;块注释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;logger.info(&lt;span class=&quot;string&quot;&gt;&quot;---------开始---------&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SubmitOrderInfo submitOrderInfo = getSubmitOrderInfo(orderId);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;行注释，只用来注释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//ResultInfo resultInfo = orderService.orderStateUpdate(voucherNo);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;行注释，用来解释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;private int &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; // &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; 是顶级分类的 ID&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Mysql-相关命名、规范&quot;&gt;&lt;a href=&quot;#Mysql-相关命名、规范&quot; class=&quot;headerlink&quot; title=&quot;Mysql 相关命名、规范&quot;&gt;&lt;/a&gt;Mysql 相关命名、规范&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;表名&lt;/strong&gt;：全部小写，需要两个、多个单词表达的使用下划线隔开，&lt;code&gt;eg：prd_category&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;字段名&lt;/strong&gt;：全部小写，需要两个、多个单词表达的使用下划线隔开，&lt;code&gt;eg：category_name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;注释：&lt;/li&gt;
+&lt;li&gt;行注释&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;# 下面内容需要先执行&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-- 下面内容需要先执行&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;快注释&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;下面内容需要先执行&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;需要注意的是：分类的 ID 需要先检查&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;程序 SQL 补丁文件命名，eg：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;20160306-update-更新所有会员密码&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;20160312-delete-删除指定会员密码&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;20160313-insert-新增会员数据&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;20160315-alter-更新会员邮箱字段长度&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;编码&quot;&gt;&lt;a href=&quot;#编码&quot; class=&quot;headerlink&quot; title=&quot;编码&quot;&gt;&lt;/a&gt;编码&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;数据源连接：&lt;code&gt;jdbc:mysql://localhost:3306/youshop?characterEncoding=utf-8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Java 文件编码：&lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;XML 文件编码：&lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Properties 文件编码：&lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mysql 字符集：&lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Tab 缩进为 4 个空格，使用 IntelliJ IDEA 标准格式化即可&lt;/li&gt;
+&lt;li&gt;TODO 标记必须使用个人自定义 TODO，不能使用公共的&lt;/li&gt;
+&lt;li&gt;SVN、Git 提交必须有 Commit Message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;资料&quot;&gt;&lt;a href=&quot;#资料&quot; class=&quot;headerlink&quot; title=&quot;资料&quot;&gt;&lt;/a&gt;资料&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/google/styleguide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/google/styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3534447.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3534447.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+    <summary type="html">
+    
+      想和大家一起讨论关于开发过程的一些规范整理
+    
+    </summary>
+    
+      <category term="Java" scheme="http://code.youmeek.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://code.youmeek.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>为什么不尝试下 IntelliJ IDEA？我想劝说你</title>
@@ -109,7 +244,7 @@
     <link href="http://code.youmeek.com/2016/03/09/2016/03/Maven/"/>
     <id>http://code.youmeek.com/2016/03/09/2016/03/Maven/</id>
     <published>2016-03-09T11:56:08.000Z</published>
-    <updated>2016-03-13T13:35:00.732Z</updated>
+    <updated>2016-03-10T11:48:15.646Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文初衷&quot;&gt;&lt;a href=&quot;#本文初衷&quot; class=&quot;headerlink&quot; title=&quot;本文初衷&quot;&gt;&lt;/a&gt;本文初衷&lt;/h2&gt;&lt;ul&gt;
