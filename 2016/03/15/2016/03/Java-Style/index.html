@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="YouMeek Code">
 <meta property="og:description" content="想和大家一起讨论关于开发过程的一些规范整理">
 <meta property="og:image" content="http://img.youmeek.com/2016/java-style.jpg">
-<meta property="og:updated_time" content="2016-03-15T14:03:28.899Z">
+<meta property="og:updated_time" content="2016-03-15T14:06:52.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 开发基础规范（初稿）">
 <meta name="twitter:description" content="想和大家一起讨论关于开发过程的一些规范整理">
@@ -353,16 +353,18 @@
 <li><strong>表名</strong>：全部小写，需要两个、多个单词表达的使用下划线隔开，<code>eg：prd_category</code></li>
 <li><strong>字段名</strong>：全部小写，需要两个、多个单词表达的使用下划线隔开，<code>eg：category_name</code></li>
 <li>注释：</li>
-<li>行注释<ul>
+<li><p>行注释</p>
+<ul>
 <li><code># 下面内容需要先执行</code></li>
 <li><code>-- 下面内容需要先执行</code></li>
 </ul>
 </li>
 <li><p>快注释</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">下面内容需要先执行</span><br><span class="line">需要注意的是：分类的 ID 需要先检查</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>程序 SQL 补丁文件命名，eg：</p>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">下面内容需要先执行</span><br><span class="line">需要注意的是：分类的 ID 需要先检查</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
 <ul>
+<li>程序 SQL 补丁文件命名，eg：<ul>
 <li><code>20160306-update-更新所有会员密码</code></li>
 <li><code>20160312-delete-删除指定会员密码</code></li>
 <li><code>20160313-insert-新增会员数据</code></li>
@@ -395,7 +397,7 @@
         <p><span>本文标题:</span><a href="/2016/03/15/2016/03/Java-Style/">Java 开发基础规范（初稿）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Judas.n 的个人博客">Judas.n</a></p>
         <p><span>发布时间:</span>2016年03月15日 - 21时09分</p>
-        <p><span>最后更新:</span>2016年03月15日 - 22时03分</p>
+        <p><span>最后更新:</span>2016年03月15日 - 22时06分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/03/15/2016/03/Java-Style/" title="Java 开发基础规范（初稿）">http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</a>
             <span class="copy-path" data-clipboard-text="原文: http://code.youmeek.com/2016/03/15/2016/03/Java-Style/　　作者: Judas.n" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
