@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-15T14:08:47.020Z</updated>
+  <updated>2016-03-15T14:15:04.929Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://code.youmeek.com/2016/03/15/2016/03/Java-Style/"/>
     <id>http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</id>
     <published>2016-03-15T13:09:27.000Z</published>
-    <updated>2016-03-15T14:08:47.020Z</updated>
+    <updated>2016-03-15T14:15:04.929Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;http://img.youmeek.com/2016/java-style.jpg&quot; alt=&quot;IntelliJ IDEA&quot;&gt;&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;命名、规范&quot;&gt;&lt;a href=&quot;#命名、规范&quot; class=&quot;headerlink&quot; title=&quot;命名、规范&quot;&gt;&lt;/a&gt;命名、规范&lt;/h2&gt;&lt;h3 id=&quot;Java-相关命名、规范&quot;&gt;&lt;a href=&quot;#Java-相关命名、规范&quot; class=&quot;headerlink&quot; title=&quot;Java 相关命名、规范&quot;&gt;&lt;/a&gt;Java 相关命名、规范&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;命名：&lt;ul&gt;
-&lt;li&gt;Java 类名命名&lt;ul&gt;
+&lt;li&gt;Java 类名命名（用名词性单词组合）&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;普通类名&lt;/strong&gt;：首字母大写，需要两个、多个单词表达的，使用大驼峰命名法进行命名，&lt;code&gt;eg：CategoryService&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;抽象类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Abstract，&lt;code&gt;eg：CategoryAbstract&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;自定义异常类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Exception，&lt;code&gt;eg：CategoryException&lt;/code&gt;&lt;/li&gt;
@@ -53,7 +53,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;package 名&lt;/strong&gt;：所有单词全部小写，即使有多个单词组成，且不能使用下划线连接，或是其他任意字符连接，&lt;code&gt;eg：googlebook&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;方法参数名&lt;/strong&gt;：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，&lt;code&gt;eg：categoryName&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;方法命名：&lt;ul&gt;
+&lt;li&gt;方法命名（用动词性单词开头）：&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;数据库访问层方法名&lt;/strong&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;saveCategory()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;deleteCategoryByObject()&lt;/code&gt;&lt;/li&gt;
