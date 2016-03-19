@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-15T14:21:14.130Z</updated>
+  <updated>2016-03-19T00:47:22.822Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -16,11 +16,86 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我的 Firefox 扩展 和 主题（不间断更新）</title>
+    <link href="http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/"/>
+    <id>http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/</id>
+    <published>2016-03-18T12:41:03.000Z</published>
+    <updated>2016-03-19T00:47:22.822Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.youmeek.com/2016/Firefox.jpg&quot; alt=&quot;Firefox&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;初衷&quot;&gt;&lt;a href=&quot;#初衷&quot; class=&quot;headerlink&quot; title=&quot;初衷&quot;&gt;&lt;/a&gt;初衷&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;整理自己的习惯，也希望你有好的扩展可以留言给我推荐，能提高效率的事情我非常需要！&lt;/li&gt;
+&lt;li&gt;不对下面扩展进行再唠叨，具体点击到扩展主页可以看到对应的说明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;扩展&quot;&gt;&lt;a href=&quot;#扩展&quot; class=&quot;headerlink&quot; title=&quot;扩展&quot;&gt;&lt;/a&gt;扩展&lt;/h2&gt;&lt;h3 id=&quot;整合&quot;&gt;&lt;a href=&quot;#整合&quot; class=&quot;headerlink&quot; title=&quot;整合&quot;&gt;&lt;/a&gt;整合&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/collections/judasn/youmeek-firefox-%E6%89%A9%E5%B1%95%E6%94%B6%E8%97%8F%E9%9B%86/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;YouMeek-Firefox-主题收藏集&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;具体&quot;&gt;&lt;a href=&quot;#具体&quot; class=&quot;headerlink&quot; title=&quot;具体&quot;&gt;&lt;/a&gt;具体&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;官网：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/extensions/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/extensions/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Adblock Plus：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/adblock-plus&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/adblock-plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LastPass：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/lastpass-password-manager&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/lastpass-password-manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Xmarks：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/xmarks-sync&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/xmarks-sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Bookmark Here ²：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/add-bookmark-here-2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/add-bookmark-here-2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google search link fix：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/google-search-link-fix/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/google-search-link-fix/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FindBar Tweak：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/findbar-tweak&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/findbar-tweak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Firebug：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/firebug&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/firebug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;iMacros for Firefox：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/imacros-for-firefox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/imacros-for-firefox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tab Mix Plus：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/tab-mix-plus&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/tab-mix-plus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tile Tabs：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/tile-tabs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/tile-tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add to Search Bar：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/add-to-search-bar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/add-to-search-bar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Text Link：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/text-link&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/text-link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beyond Australis：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/the-fox-only-better&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/the-fox-only-better&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AutoPagerize：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/autopagerize/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/autopagerize/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SearchWP：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/searchwp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/searchwp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Simplify Awesome Bar 随打即找：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/simplify-awesome-bar/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/simplify-awesome-bar/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;gooreplacer：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/gooreplacer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/gooreplacer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Location Bar Enhancer：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/ui-enhancer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/ui-enhancer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ghostery：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/ghostery&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/ghostery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NoScript：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/noscript&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/noscript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DownThemAll：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/downthemall/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/downthemall/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;WizNote Web Clipper：&lt;a href=&quot;http://www.wiz.cn/downloads-webclipper.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.wiz.cn/downloads-webclipper.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Markdown Here：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/markdown-here&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/markdown-here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NetVideoHunter：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/netvideohunter-video-downloade&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/netvideohunter-video-downloade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video DownloadHelper：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/video-downloadhelper/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/video-downloadhelper/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RightToClick：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/righttoclick&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/righttoclick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Thumbnail Zoom：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/thumbnail-zoom&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/thumbnail-zoom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JSONView：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/jsonview&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/jsonview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stylish：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/stylish/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/stylish/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bookmarks Checker：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/bookmarks-checker/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/bookmarks-checker/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/%E8%B4%AD%E7%89%A9%E5%85%9A%E5%85%A8%E7%BD%91%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;购物党全网自动比价工具&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;主题&quot;&gt;&lt;a href=&quot;#主题&quot; class=&quot;headerlink&quot; title=&quot;主题&quot;&gt;&lt;/a&gt;主题&lt;/h2&gt;&lt;h3 id=&quot;整合-1&quot;&gt;&lt;a href=&quot;#整合-1&quot; class=&quot;headerlink&quot; title=&quot;整合&quot;&gt;&lt;/a&gt;整合&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/collections/judasn/youmeek-firefox-%E4%B8%BB%E9%A2%98%E6%94%B6%E8%97%8F%E9%9B%86/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;YouMeek-Firefox-主题收藏集&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;具体-1&quot;&gt;&lt;a href=&quot;#具体-1&quot; class=&quot;headerlink&quot; title=&quot;具体&quot;&gt;&lt;/a&gt;具体&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;官网：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/themes/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/themes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carbon Pro：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-pro/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-pro/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carbon Light：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-light/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-light/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carbon Dark：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-dark/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/carbon-dark/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aurora Australis：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/aurora-australis/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/aurora-australis/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cubiccube：&lt;a href=&quot;https://addons.mozilla.org/zh-CN/firefox/addon/cubiccube/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://addons.mozilla.org/zh-CN/firefox/addon/cubiccube/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+    <summary type="html">
+    
+      对自己的 Firefox 进行一个重新整理
+    
+    </summary>
+    
+      <category term="Firefox" scheme="http://code.youmeek.com/categories/Firefox/"/>
+    
+    
+      <category term="Firefox" scheme="http://code.youmeek.com/tags/Firefox/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 开发基础规范（初稿）</title>
     <link href="http://code.youmeek.com/2016/03/15/2016/03/Java-Style/"/>
     <id>http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</id>
     <published>2016-03-15T13:09:27.000Z</published>
-    <updated>2016-03-15T14:21:14.130Z</updated>
+    <updated>2016-03-16T12:06:37.284Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;http://img.youmeek.com/2016/java-style.jpg&quot; alt=&quot;IntelliJ IDEA&quot;&gt;&lt;/p&gt;
@@ -35,8 +110,13 @@
 &lt;li&gt;&lt;strong&gt;自定义异常类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Exception，&lt;code&gt;eg：CategoryException&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;队列类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Queue，&lt;code&gt;eg：CategoryQueue&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;后台任务类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Task 或 Job，&lt;code&gt;eg：CategoryTask、CategoryJob&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Servlet 类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Servlet，&lt;code&gt;eg：CategoryServlet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Filter 类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Filter，&lt;code&gt;eg：CategoryFilter&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工厂类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Factory，&lt;code&gt;eg：CategoryFactory&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工具类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Util，&lt;code&gt;eg：CategoryUtil&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;测试类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Test，&lt;code&gt;eg：CategoryServiceTest&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据库访问层类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryDao&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库访问层接口类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryDao&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库访问层实现类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Dao，&lt;code&gt;eg：CategoryDaoImpl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;业务层接口类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Service，&lt;code&gt;eg：CategoryService&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;业务层实现类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 ServiceImpl，&lt;code&gt;eg：CategoryServiceImpl&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;控制层类名&lt;/strong&gt;：在普通类名的基础上对其命名后加上 Controller，&lt;code&gt;eg：CategoryController、CategoryAction、CategoryActivity&lt;/code&gt;&lt;/li&gt;
@@ -72,8 +152,22 @@
 &lt;li&gt;&lt;code&gt;updateCategoryById()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;findCategoryList()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;findCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;initCategory()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;openConnection()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;closeConnection()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;writeFile()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;readFile()&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;视图层（JSP、FreeMarker 等）：&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;categoryList&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;categoryAdd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;categoryUpdate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;categoryEdit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;categoryDetail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;categoryTree&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -109,7 +203,7 @@
 &lt;li&gt;&lt;code&gt;-- 下面内容需要先执行&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;快注释&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;块注释&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;下面内容需要先执行&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;需要注意的是：分类的 ID 需要先检查&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -137,6 +231,9 @@
 &lt;h2 id=&quot;资料&quot;&gt;&lt;a href=&quot;#资料&quot; class=&quot;headerlink&quot; title=&quot;资料&quot;&gt;&lt;/a&gt;资料&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/google/styleguide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/google/styleguide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3534447.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3534447.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;感谢&quot;&gt;&lt;a href=&quot;#感谢&quot; class=&quot;headerlink&quot; title=&quot;感谢&quot;&gt;&lt;/a&gt;感谢&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;感谢 Lindp 提供意见&lt;/li&gt;
 &lt;/ul&gt;</content>
     
     <summary type="html">
@@ -596,7 +693,7 @@
     <link href="http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/"/>
     <id>http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/</id>
     <published>2016-03-07T12:50:25.000Z</published>
-    <updated>2016-03-13T13:39:05.766Z</updated>
+    <updated>2016-03-18T12:36:49.895Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;本文-Markdown-源文件地址&quot;&gt;&lt;a href=&quot;#本文-Markdown-源文件地址&quot; class=&quot;headerlink&quot; title=&quot;本文 Markdown 源文件地址&quot;&gt;&lt;/a&gt;本文 Markdown 源文件地址&lt;/h2&gt;&lt;ul&gt;
@@ -719,6 +816,7 @@
 &lt;li&gt;找官网 FAQ：&lt;a href=&quot;https://maven.apache.org/general.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://maven.apache.org/general.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Google&lt;/li&gt;
 &lt;li&gt;Stack Overflow：&lt;a href=&quot;http://stackoverflow.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QQ 群组讨论&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

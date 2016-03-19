@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Java 开发基础规范（初稿） | YouMeek Code</title>
+  <title>我的 Firefox 扩展 和 主题（不间断更新） | YouMeek Code</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <meta name="description" content="想和大家一起讨论关于开发过程的一些规范整理">
+  <meta name="description" content="对自己的 Firefox 进行一个重新整理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 开发基础规范（初稿）">
-<meta property="og:url" content="http://code.youmeek.com/2016/03/15/2016/03/Java-Style/index.html">
+<meta property="og:title" content="我的 Firefox 扩展 和 主题（不间断更新）">
+<meta property="og:url" content="http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/index.html">
 <meta property="og:site_name" content="YouMeek Code">
-<meta property="og:description" content="想和大家一起讨论关于开发过程的一些规范整理">
-<meta property="og:image" content="http://img.youmeek.com/2016/java-style.jpg">
-<meta property="og:updated_time" content="2016-03-16T12:06:37.284Z">
+<meta property="og:description" content="对自己的 Firefox 进行一个重新整理">
+<meta property="og:image" content="http://img.youmeek.com/2016/Firefox.jpg">
+<meta property="og:updated_time" content="2016-03-19T00:47:22.822Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 开发基础规范（初稿）">
-<meta name="twitter:description" content="想和大家一起讨论关于开发过程的一些规范整理">
+<meta name="twitter:title" content="我的 Firefox 扩展 和 主题（不间断更新）">
+<meta name="twitter:description" content="对自己的 Firefox 进行一个重新整理">
   
     <link rel="alternative" href="/atom.xml" title="YouMeek Code" type="application/atom+xml">
   
@@ -239,11 +239,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2016/03/Java-Style" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2016/03/Firefox-Extensions-Themes" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/15/2016/03/Java-Style/" class="article-date">
-      <time datetime="2016-03-15T13:09:27.000Z" itemprop="datePublished">2016-03-15</time>
+      <a href="/2016/03/18/2016/03/Firefox-Extensions-Themes/" class="article-date">
+      <time datetime="2016-03-18T12:41:03.000Z" itemprop="datePublished">2016-03-18</time>
 </a>
     </div>
   
@@ -254,16 +254,16 @@
     
       <header class="article-header">
         <h1 class="article-title" itemprop="name">
-      Java 开发基础规范（初稿）
+      我的 Firefox 扩展 和 主题（不间断更新）
     </h1>
       </header>
       
       <div class="article-info article-info-post">
         <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Java/">Java</a>
+    <a class="article-category-link" href="/categories/Firefox/">Firefox</a>
     </div>
         <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Firefox/">Firefox</a></li></ul>
     </div>
         <div class="clearfix"></div>
       </div>
@@ -273,142 +273,58 @@
       
           
         <a id="more"></a>
-<p><img src="http://img.youmeek.com/2016/java-style.jpg" alt="IntelliJ IDEA"></p>
-<h2 id="本文初衷"><a href="#本文初衷" class="headerlink" title="本文初衷"></a>本文初衷</h2><ul>
-<li>以本篇为引，获取到有识之士的一些意见或是看法，促进成长！</li>
+<p><img src="http://img.youmeek.com/2016/Firefox.jpg" alt="Firefox"></p>
+<h2 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h2><ul>
+<li>整理自己的习惯，也希望你有好的扩展可以留言给我推荐，能提高效率的事情我非常需要！</li>
+<li>不对下面扩展进行再唠叨，具体点击到扩展主页可以看到对应的说明。</li>
 </ul>
-<h2 id="命名、规范"><a href="#命名、规范" class="headerlink" title="命名、规范"></a>命名、规范</h2><h3 id="Java-相关命名、规范"><a href="#Java-相关命名、规范" class="headerlink" title="Java 相关命名、规范"></a>Java 相关命名、规范</h3><ul>
-<li>命名：<ul>
-<li>Java 类名命名（用名词性单词组合）<ul>
-<li><strong>普通类名</strong>：首字母大写，需要两个、多个单词表达的，使用大驼峰命名法进行命名，<code>eg：CategoryService</code></li>
-<li><strong>抽象类名</strong>：在普通类名的基础上对其命名后加上 Abstract，<code>eg：CategoryAbstract</code></li>
-<li><strong>自定义异常类名</strong>：在普通类名的基础上对其命名后加上 Exception，<code>eg：CategoryException</code></li>
-<li><strong>队列类名</strong>：在普通类名的基础上对其命名后加上 Queue，<code>eg：CategoryQueue</code></li>
-<li><strong>后台任务类名</strong>：在普通类名的基础上对其命名后加上 Task 或 Job，<code>eg：CategoryTask、CategoryJob</code></li>
-<li><strong>Servlet 类名</strong>：在普通类名的基础上对其命名后加上 Servlet，<code>eg：CategoryServlet</code></li>
-<li><strong>Filter 类名</strong>：在普通类名的基础上对其命名后加上 Filter，<code>eg：CategoryFilter</code></li>
-<li><strong>工厂类名</strong>：在普通类名的基础上对其命名后加上 Factory，<code>eg：CategoryFactory</code></li>
-<li><strong>工具类名</strong>：在普通类名的基础上对其命名后加上 Util，<code>eg：CategoryUtil</code></li>
-<li><strong>测试类名</strong>：在普通类名的基础上对其命名后加上 Test，<code>eg：CategoryServiceTest</code></li>
-<li><strong>数据库访问层接口类名</strong>：在普通类名的基础上对其命名后加上 Dao，<code>eg：CategoryDao</code></li>
-<li><strong>数据库访问层实现类名</strong>：在普通类名的基础上对其命名后加上 Dao，<code>eg：CategoryDaoImpl</code></li>
-<li><strong>业务层接口类名</strong>：在普通类名的基础上对其命名后加上 Service，<code>eg：CategoryService</code></li>
-<li><strong>业务层实现类名</strong>：在普通类名的基础上对其命名后加上 ServiceImpl，<code>eg：CategoryServiceImpl</code></li>
-<li><strong>控制层类名</strong>：在普通类名的基础上对其命名后加上 Controller，<code>eg：CategoryController、CategoryAction、CategoryActivity</code></li>
-<li><strong>对象扩展类名</strong>：在普通类名的基础上对其命名后加上 VO，<code>eg：CategoryVO(Value Object)、CategoryDTO(Data Transfer Object)、CategoryPOJO(plain ordinary java object)</code></li>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><h3 id="整合"><a href="#整合" class="headerlink" title="整合"></a>整合</h3><ul>
+<li><a href="https://addons.mozilla.org/zh-CN/firefox/collections/judasn/youmeek-firefox-%E6%89%A9%E5%B1%95%E6%94%B6%E8%97%8F%E9%9B%86/" target="_blank" rel="external">YouMeek-Firefox-主题收藏集</a></li>
 </ul>
-</li>
-<li><strong>常量名</strong>：全部字母大写，有多个单词用下划线分隔，<code>eg：MY_AGE</code></li>
-<li><strong>常规变量名</strong>：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，<code>eg：categoryName</code></li>
-<li><strong>复数变量名</strong>：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，eg：<ul>
-<li><code>List：categoryList</code></li>
-<li><code>Map：categoryMap</code></li>
-<li><code>Set：categorySet</code></li>
+<h3 id="具体"><a href="#具体" class="headerlink" title="具体"></a>具体</h3><ul>
+<li>官网：<a href="https://addons.mozilla.org/zh-CN/firefox/extensions/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/extensions/</a></li>
+<li>Adblock Plus：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/adblock-plus" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/adblock-plus</a></li>
+<li>LastPass：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/lastpass-password-manager" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/lastpass-password-manager</a></li>
+<li>Xmarks：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/xmarks-sync" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/xmarks-sync</a></li>
+<li>Add Bookmark Here ²：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/add-bookmark-here-2" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/add-bookmark-here-2</a></li>
+<li>Google search link fix：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/google-search-link-fix/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/google-search-link-fix/</a></li>
+<li>FindBar Tweak：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/findbar-tweak" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/findbar-tweak</a></li>
+<li>Firebug：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/firebug" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/firebug</a></li>
+<li>iMacros for Firefox：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/imacros-for-firefox" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/imacros-for-firefox</a></li>
+<li>Tab Mix Plus：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/tab-mix-plus" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/tab-mix-plus</a></li>
+<li>Tile Tabs：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/tile-tabs" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/tile-tabs</a></li>
+<li>Add to Search Bar：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/add-to-search-bar" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/add-to-search-bar</a></li>
+<li>Text Link：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/text-link" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/text-link</a></li>
+<li>Beyond Australis：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/the-fox-only-better" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/the-fox-only-better</a></li>
+<li>AutoPagerize：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/autopagerize/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/autopagerize/</a></li>
+<li>SearchWP：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/searchwp" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/searchwp</a></li>
+<li>Simplify Awesome Bar 随打即找：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/simplify-awesome-bar/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/simplify-awesome-bar/</a></li>
+<li>gooreplacer：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/gooreplacer" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/gooreplacer</a></li>
+<li>Location Bar Enhancer：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/ui-enhancer" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/ui-enhancer</a></li>
+<li>Ghostery：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/ghostery" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/ghostery</a></li>
+<li>NoScript：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/noscript" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/noscript</a></li>
+<li>DownThemAll：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/downthemall/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/downthemall/</a></li>
+<li>WizNote Web Clipper：<a href="http://www.wiz.cn/downloads-webclipper.html" target="_blank" rel="external">http://www.wiz.cn/downloads-webclipper.html</a></li>
+<li>Markdown Here：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/markdown-here" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/markdown-here</a></li>
+<li>NetVideoHunter：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/netvideohunter-video-downloade" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/netvideohunter-video-downloade</a></li>
+<li>Video DownloadHelper：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/video-downloadhelper/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/video-downloadhelper/</a></li>
+<li>RightToClick：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/righttoclick" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/righttoclick</a></li>
+<li>Thumbnail Zoom：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/thumbnail-zoom" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/thumbnail-zoom</a></li>
+<li>JSONView：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/jsonview" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/jsonview</a></li>
+<li>Stylish：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/stylish/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/stylish/</a></li>
+<li>Bookmarks Checker：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/bookmarks-checker/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/bookmarks-checker/</a></li>
+<li><a href="https://addons.mozilla.org/zh-CN/firefox/addon/%E8%B4%AD%E7%89%A9%E5%85%9A%E5%85%A8%E7%BD%91%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/" target="_blank" rel="external">购物党全网自动比价工具</a></li>
 </ul>
-</li>
-<li><strong>package 名</strong>：所有单词全部小写，即使有多个单词组成，且不能使用下划线连接，或是其他任意字符连接，<code>eg：googlebook</code></li>
-<li><strong>方法参数名</strong>：首字母小写，需要两个、多个单词表达的，使用小驼峰命名法进行命名，<code>eg：categoryName</code></li>
-<li>方法命名（用动词性单词开头）：<ul>
-<li><strong>数据库访问层方法名</strong><ul>
-<li><code>saveCategory()</code></li>
-<li><code>deleteCategoryByObject()</code></li>
-<li><code>deleteCategoryById()</code></li>
-<li><code>updateCategoryByObject()</code></li>
-<li><code>updateCategoryById()</code></li>
-<li><code>findCategoryList()</code></li>
-<li><code>findCategory()</code></li>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h3 id="整合-1"><a href="#整合-1" class="headerlink" title="整合"></a>整合</h3><ul>
+<li><a href="https://addons.mozilla.org/zh-CN/firefox/collections/judasn/youmeek-firefox-%E4%B8%BB%E9%A2%98%E6%94%B6%E8%97%8F%E9%9B%86/" target="_blank" rel="external">YouMeek-Firefox-主题收藏集</a></li>
 </ul>
-</li>
-<li><strong>业务层方法名</strong><ul>
-<li><code>saveCategory()</code></li>
-<li><code>deleteCategoryByObject()</code></li>
-<li><code>deleteCategoryById()</code></li>
-<li><code>updateCategoryByObject()</code></li>
-<li><code>updateCategoryById()</code></li>
-<li><code>findCategoryList()</code></li>
-<li><code>findCategory()</code></li>
-<li><code>initCategory()</code></li>
-<li><code>openConnection()</code></li>
-<li><code>closeConnection()</code></li>
-<li><code>writeFile()</code></li>
-<li><code>readFile()</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>视图层（JSP、FreeMarker 等）：<ul>
-<li><code>categoryList</code></li>
-<li><code>categoryAdd</code></li>
-<li><code>categoryUpdate</code></li>
-<li><code>categoryEdit</code></li>
-<li><code>categoryDetail</code></li>
-<li><code>categoryTree</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>规范：<ul>
-<li>当一个类有多个构造函数，或是多个同名方法，这些函数 / 方法应该按顺序出现在一起，中间不要放进其它函数 / 方法</li>
-<li>导入包的时候，import 后面不要使用通配符 * 来代替有些包的导入</li>
-<li>大括号与 if, else, for, do, while 语句一起使用，即使只有一条语句(或是空)，也应该把大括号写上</li>
-<li>不要使用组合声明，比如 int a, b;</li>
-<li>需要时才声明，并尽快进行初始化</li>
-<li>注解紧跟在文档块后面，应用于类、方法和构造函数，一个注解独占一行</li>
-</ul>
-</li>
-<li>注释：</li>
-<li>块注释</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">logger.info(<span class="string">"---------开始---------"</span>);</span><br><span class="line">SubmitOrderInfo submitOrderInfo = getSubmitOrderInfo(orderId);</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-<ul>
-<li>行注释，只用来注释</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//ResultInfo resultInfo = orderService.orderStateUpdate(voucherNo);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>行注释，用来解释</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">private int categoryId = <span class="number">1</span>; // <span class="number">1</span> 是顶级分类的 ID</span><br></pre></td></tr></table></figure>
-<h3 id="Mysql-相关命名、规范"><a href="#Mysql-相关命名、规范" class="headerlink" title="Mysql 相关命名、规范"></a>Mysql 相关命名、规范</h3><ul>
-<li><strong>表名</strong>：全部小写，需要两个、多个单词表达的使用下划线隔开，<code>eg：prd_category</code></li>
-<li><strong>字段名</strong>：全部小写，需要两个、多个单词表达的使用下划线隔开，<code>eg：category_name</code></li>
-<li>注释：</li>
-<li><p>行注释</p>
-<ul>
-<li><code># 下面内容需要先执行</code></li>
-<li><code>-- 下面内容需要先执行</code></li>
-</ul>
-</li>
-<li><p>块注释</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">下面内容需要先执行</span><br><span class="line">需要注意的是：分类的 ID 需要先检查</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-<ul>
-<li>程序 SQL 补丁文件命名，eg：<ul>
-<li><code>20160306-update-更新所有会员密码</code></li>
-<li><code>20160312-delete-删除指定会员密码</code></li>
-<li><code>20160313-insert-新增会员数据</code></li>
-<li><code>20160315-alter-更新会员邮箱字段长度</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h2><ul>
-<li>数据源连接：<code>jdbc:mysql://localhost:3306/youshop?characterEncoding=utf-8</code></li>
-<li>Java 文件编码：<code>UTF-8</code></li>
-<li>XML 文件编码：<code>UTF-8</code></li>
-<li>Properties 文件编码：<code>UTF-8</code></li>
-<li>Mysql 字符集：<code>UTF-8</code></li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li>Tab 缩进为 4 个空格，使用 IntelliJ IDEA 标准格式化即可</li>
-<li>TODO 标记必须使用个人自定义 TODO，不能使用公共的</li>
-<li>SVN、Git 提交必须有 Commit Message</li>
-</ul>
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><ul>
-<li><a href="https://github.com/google/styleguide" target="_blank" rel="external">https://github.com/google/styleguide</a></li>
-<li><a href="http://www.cnblogs.com/lanxuezaipiao/p/3534447.html" target="_blank" rel="external">http://www.cnblogs.com/lanxuezaipiao/p/3534447.html</a></li>
-</ul>
-<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><ul>
-<li>感谢 Lindp 提供意见</li>
+<h3 id="具体-1"><a href="#具体-1" class="headerlink" title="具体"></a>具体</h3><ul>
+<li>官网：<a href="https://addons.mozilla.org/zh-CN/firefox/themes/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/themes/</a></li>
+<li>Carbon Pro：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/carbon-pro/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/carbon-pro/</a></li>
+<li>Carbon Light：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/carbon-light/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/carbon-light/</a></li>
+<li>Carbon Dark：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/carbon-dark/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/carbon-dark/</a></li>
+<li>Aurora Australis：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/aurora-australis/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/aurora-australis/</a></li>
+<li>cubiccube：<a href="https://addons.mozilla.org/zh-CN/firefox/addon/cubiccube/" target="_blank" rel="external">https://addons.mozilla.org/zh-CN/firefox/addon/cubiccube/</a></li>
 </ul>
       
     </div>
@@ -416,13 +332,13 @@
   </div>
   
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/03/15/2016/03/Java-Style/">Java 开发基础规范（初稿）</a></p>
+        <p><span>本文标题:</span><a href="/2016/03/18/2016/03/Firefox-Extensions-Themes/">我的 Firefox 扩展 和 主题（不间断更新）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Judas.n 的个人博客">Judas.n</a></p>
-        <p><span>发布时间:</span>2016年03月15日 - 21时09分</p>
-        <p><span>最后更新:</span>2016年03月16日 - 20时06分</p>
+        <p><span>发布时间:</span>2016年03月18日 - 20时41分</p>
+        <p><span>最后更新:</span>2016年03月19日 - 08时47分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/03/15/2016/03/Java-Style/" title="Java 开发基础规范（初稿）">http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://code.youmeek.com/2016/03/15/2016/03/Java-Style/　　作者: Judas.n" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/18/2016/03/Firefox-Extensions-Themes/" title="我的 Firefox 扩展 和 主题（不间断更新）">http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/　　作者: Judas.n" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -435,16 +351,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/03/18/2016/03/Firefox-Extensions-Themes/">
-                    我的 Firefox 扩展 和 主题（不间断更新）
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/03/11/2016/03/IntelliJ-IDEA-ER/">
-                    为什么不尝试下 IntelliJ IDEA？我想劝说你
+                <a href="/2016/03/15/2016/03/Java-Style/">
+                    Java 开发基础规范（初稿）
                 </a>
             </div>
         
@@ -454,7 +364,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#本文初衷"><span class="toc-number">1.</span> <span class="toc-text">本文初衷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命名、规范"><span class="toc-number">2.</span> <span class="toc-text">命名、规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-相关命名、规范"><span class="toc-number">2.1.</span> <span class="toc-text">Java 相关命名、规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mysql-相关命名、规范"><span class="toc-number">2.2.</span> <span class="toc-text">Mysql 相关命名、规范</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编码"><span class="toc-number">3.</span> <span class="toc-text">编码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">4.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资料"><span class="toc-number">5.</span> <span class="toc-text">资料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感谢"><span class="toc-number">6.</span> <span class="toc-text">感谢</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#初衷"><span class="toc-number">1.</span> <span class="toc-text">初衷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#扩展"><span class="toc-number">2.</span> <span class="toc-text">扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#整合"><span class="toc-number">2.1.</span> <span class="toc-text">整合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#具体"><span class="toc-number">2.2.</span> <span class="toc-text">具体</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题"><span class="toc-number">3.</span> <span class="toc-text">主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#整合-1"><span class="toc-number">3.1.</span> <span class="toc-text">整合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#具体-1"><span class="toc-number">3.2.</span> <span class="toc-text">具体</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -540,15 +450,13 @@
 
 <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/03/18/2016/03/Firefox-Extensions-Themes/" title="上一篇: 我的 Firefox 扩展 和 主题（不间断更新）">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/03/11/2016/03/IntelliJ-IDEA-ER/" title="下一篇: 为什么不尝试下 IntelliJ IDEA？我想劝说你">
+            <a href="/2016/03/15/2016/03/Java-Style/" title="下一篇: Java 开发基础规范（初稿）">
                 <i class="fa fa-angle-right"></i>
             </a>
         

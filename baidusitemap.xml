@@ -4,8 +4,55 @@
 
     
   <url>
+    <loc>http://code.youmeek.com/2016/03/18/2016/03/Firefox-Extensions-Themes/</loc>
+    <lastmod>2016-03-19T00:47:22.822Z</lastmod>
+    <data>
+        <display>
+        <title>我的 Firefox 扩展 和 主题（不间断更新）</title>
+        <pubTime>2016-03-18T12:41:03.000Z</pubTime>
+        
+        <tag>Firefox</tag>
+         
+         
+           
+             
+              <breadCrumb title="Firefox" url="http://code.youmeek.com/categories/Firefox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/</loc>
+    <lastmod>2016-03-18T12:36:49.895Z</lastmod>
+    <data>
+        <display>
+        <title>我的学习、归纳方法（以学习 Maven 为例）</title>
+        <pubTime>2016-03-07T12:50:25.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Maven</tag>
+         
+        <tag>学习方法</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习方法" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+          
+             
+              <breadCrumb title="Java" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://code.youmeek.com/2016/03/15/2016/03/Java-Style/</loc>
-    <lastmod>2016-03-15T14:21:14.130Z</lastmod>
+    <lastmod>2016-03-16T12:06:37.284Z</lastmod>
     <data>
         <display>
         <title>Java 开发基础规范（初稿）</title>
@@ -37,33 +84,6 @@
            
              
               <breadCrumb title="Hexo" url="http://code.youmeek.com/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://code.youmeek.com/2016/03/07/2016/02/My-Learning-Way/</loc>
-    <lastmod>2016-03-13T13:39:05.766Z</lastmod>
-    <data>
-        <display>
-        <title>我的学习、归纳方法（以学习 Maven 为例）</title>
-        <pubTime>2016-03-07T12:50:25.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-        <tag>Maven</tag>
-         
-        <tag>学习方法</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习方法" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
-          
-             
-              <breadCrumb title="Java" url="http://code.youmeek.com/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/Java/"/>
           
         </display>
     </data>
