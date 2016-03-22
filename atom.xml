@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://code.youmeek.com/"/>
-  <updated>2016-03-19T00:56:00.689Z</updated>
+  <updated>2016-03-22T16:28:37.616Z</updated>
   <id>http://code.youmeek.com/</id>
   
   <author>
@@ -14,6 +14,108 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单模块 / 多模块 的 Spring MVC + Spring + Mybatis 项目讲解（基于 IntelliJ IDEA）</title>
+    <link href="http://code.youmeek.com/2016/03/22/2016/03/Single-Module-SSM-Share/"/>
+    <id>http://code.youmeek.com/2016/03/22/2016/03/Single-Module-SSM-Share/</id>
+    <published>2016-03-22T13:58:08.000Z</published>
+    <updated>2016-03-22T16:28:37.616Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.youmeek.com/2016/IntelliJ-IDEA-SSM.jpg&quot; alt=&quot;IntelliJ IDEA&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;初衷&quot;&gt;&lt;a href=&quot;#初衷&quot; class=&quot;headerlink&quot; title=&quot;初衷&quot;&gt;&lt;/a&gt;初衷&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;为了给一个叫做简的女孩子带来便利，让她更加方便学习&lt;/li&gt;
+&lt;li&gt;展示 IntelliJ IDEA 高度集成化的效果，降低 IntelliJ IDEA 入门时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;视频下载&quot;&gt;&lt;a href=&quot;#视频下载&quot; class=&quot;headerlink&quot; title=&quot;视频下载&quot;&gt;&lt;/a&gt;视频下载&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;单模块的 Spring MVC + Spring + Mybatis 讲解（基于 IntelliJ IDEA）&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;百度云盘：&lt;a href=&quot;http://pan.baidu.com/s/1dEuxWh7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dEuxWh7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;360 云盘（6d49）：&lt;a href=&quot;https://yunpan.cn/cY444GphNgMe3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://yunpan.cn/cY444GphNgMe3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多模块的 Spring MVC + Spring + Mybatis 讲解（基于 IntelliJ IDEA）&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;百度云盘：&lt;a href=&quot;http://pan.baidu.com/s/1hr0x6sc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1hr0x6sc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;360 云盘（e319）：&lt;a href=&quot;https://yunpan.cn/cY4INmfJn8yvm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://yunpan.cn/cY4INmfJn8yvm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;开发环境&quot;&gt;&lt;a href=&quot;#开发环境&quot; class=&quot;headerlink&quot; title=&quot;开发环境&quot;&gt;&lt;/a&gt;开发环境&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;JDK 7（理论上支持 JDK 6、JDK 7、JDK 8）&lt;/li&gt;
+&lt;li&gt;Mysql 5.6&lt;/li&gt;
+&lt;li&gt;Maven 3.1.1&lt;/li&gt;
+&lt;li&gt;Tomcat 7&lt;/li&gt;
+&lt;li&gt;Git 2.7.0.2-64-bit&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA 15.0.4&lt;/li&gt;
+&lt;li&gt;所有编码：UTF-8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;演示内容&quot;&gt;&lt;a href=&quot;#演示内容&quot; class=&quot;headerlink&quot; title=&quot;演示内容&quot;&gt;&lt;/a&gt;演示内容&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;环境相关：&lt;ul&gt;
+&lt;li&gt;Maven 环境说明：&lt;a href=&quot;http://code.youmeek.com/2016/03/09/2016/03/Maven/&quot;&gt;http://code.youmeek.com/2016/03/09/2016/03/Maven/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;我的 Maven 环境分享下载：&lt;a href=&quot;http://pan.baidu.com/s/1bnPZU2b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1bnPZU2b&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;建议你也跟我一样直接解压在 D 盘根目录，这样其他就不需要设置了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Git 环境的说明：&lt;a href=&quot;http://code.youmeek.com/2016/02/28/2016/02/Hexo/&quot;&gt;http://code.youmeek.com/2016/02/28/2016/02/Hexo/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA 基础教程系列：&lt;a href=&quot;https://github.com/judasn/IntelliJ-IDEA-Tutorial&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/judasn/IntelliJ-IDEA-Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;IntelliJ IDEA 设置：&lt;ul&gt;
+&lt;li&gt;Fork 项目：&lt;a href=&quot;https://github.com/judasn/Basic-Single-Module-SSM&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/judasn/Basic-Single-Module-SSM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Checkout 项目并导入&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA Maven 设置&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA 文件编码设置&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEA Mybatis 插件安装（该插件收费）：&lt;a href=&quot;https://plugins.jetbrains.com/plugin/7293?pr=&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://plugins.jetbrains.com/plugin/7293?pr=&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;项目设置：&lt;ul&gt;
+&lt;li&gt;项目 JDK 设置&lt;/li&gt;
+&lt;li&gt;项目 Facet 加入 Spring 配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;代码相关：&lt;ul&gt;
+&lt;li&gt;简单讲解 pom.xml 文件&lt;/li&gt;
+&lt;li&gt;用 IntelliJ IDEA 的 Database 初始化数据库&lt;/li&gt;
+&lt;li&gt;单元测试&lt;/li&gt;
+&lt;li&gt;启动 Tomcat 加上 Make Project 事件&lt;/li&gt;
+&lt;li&gt;访问 Controller 演示 Debug&lt;/li&gt;
+&lt;li&gt;讲解 Controller 中代码左侧的各个按钮效果&lt;/li&gt;
+&lt;li&gt;JSP 页面直接点击请求地址直接跳转到 Controller&lt;/li&gt;
+&lt;li&gt;静态资源映射特别提醒下，比如你做图片上传等等，如果你没有映射好可能都会遇到 404&lt;/li&gt;
+&lt;li&gt;查看 Druid 提供监控&lt;/li&gt;
+&lt;li&gt;演示用 Mybatis 插件自动生成代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;结束语&quot;&gt;&lt;a href=&quot;#结束语&quot; class=&quot;headerlink&quot; title=&quot;结束语&quot;&gt;&lt;/a&gt;结束语&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;简，希望你有在好好学习，找到一个满意的工作&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+    <summary type="html">
+    
+      为了给一个叫做简的女孩子带来便利
+    
+    </summary>
+    
+      <category term="IntelliJ IDEA" scheme="http://code.youmeek.com/categories/IntelliJ-IDEA/"/>
+    
+      <category term="Java" scheme="http://code.youmeek.com/categories/IntelliJ-IDEA/Java/"/>
+    
+    
+      <category term="IntelliJ IDEA" scheme="http://code.youmeek.com/tags/IntelliJ-IDEA/"/>
+    
+      <category term="Java" scheme="http://code.youmeek.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>我的 Firefox 扩展 和 主题（不间断更新）</title>

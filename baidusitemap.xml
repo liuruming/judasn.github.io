@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://code.youmeek.com/2016/03/22/2016/03/Single-Module-SSM-Share/</loc>
+    <lastmod>2016-03-22T16:28:37.616Z</lastmod>
+    <data>
+        <display>
+        <title>单模块 / 多模块 的 Spring MVC + Spring + Mybatis 项目讲解（基于 IntelliJ IDEA）</title>
+        <pubTime>2016-03-22T13:58:08.000Z</pubTime>
+        
+        <tag>IntelliJ IDEA</tag>
+         
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="IntelliJ IDEA" url="http://code.youmeek.com/categories/IntelliJ-IDEA/"/>
+          
+             
+              <breadCrumb title="Java" url="http://code.youmeek.com/categories/IntelliJ-IDEA/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://code.youmeek.com/2016/03/19/2016/03/Firefox-Extensions-Themes/</loc>
     <lastmod>2016-03-19T00:56:00.689Z</lastmod>
     <data>
